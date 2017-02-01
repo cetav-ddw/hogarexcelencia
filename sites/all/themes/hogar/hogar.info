@@ -1,0 +1,43 @@
+name = Hogar
+description = Tema para el sitio Hogar Excelencia Familiar
+screenshot = screenshot.png
+version = 0.1
+engine = phptemplate
+core = 7.x
+
+;-------------- F E A T U R E S -------------
+features[] = logo
+features[] = favicon
+features[] = name
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = main_menu
+features[] = secondary_menu
+
+;-------------- R E G I O N S -------------
+;regions_hidden[] = im_a_hidden_but_visibel_for_a_module
+
+regions[page_top]           = Page Top
+regions[page_bottom]        = Page Bottom
+
+regions[header]             = Header
+regions[above_content]      = Above Content
+regions[sidebar_first]      = Sidebar First
+regions[content] 			= Content
+regions[below_content]      = Below Content
+regions[extra_content]      = Extra Content
+regions[above_footer]    	= Above footer
+
+regions[footer_top]         = Footer Top
+regions[footer_bottom]      = Footer Bottom
+
+;-------------- C S S -------------
+
+stylesheets[all][] = css/style.css
+
+;-------------- JS -------------
+
+
+
+
