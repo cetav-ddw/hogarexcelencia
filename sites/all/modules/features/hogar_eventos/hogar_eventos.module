@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Hogar  Eventos feature.
+ */
+
+include_once 'hogar_eventos.features.inc';

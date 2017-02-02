@@ -1,0 +1,14 @@
+name = Hogar Alianzas
+core = 7.x
+package = Hogar
+dependencies[] = features
+dependencies[] = image
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = field_alianzas_logo
+features[field_instance][] = node-alianzas-field_alianzas_logo
+features[node][] = alianzas
+features[views_view][] = alianzas
+features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/features

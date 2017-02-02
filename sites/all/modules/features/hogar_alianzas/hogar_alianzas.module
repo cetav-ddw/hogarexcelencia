@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Hogar Alianzas feature.
+ */
+
+include_once 'hogar_alianzas.features.inc';
