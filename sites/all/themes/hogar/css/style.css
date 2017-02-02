@@ -188,7 +188,7 @@ textarea {
 html {
   /* Change default typefaces here */
   font-family: "Poppins";
-  font-size: 137.5%;
+  font-size: 100%;
   -webkit-font-smoothing: antialiased; }
 
 /* Copy & Lists */
@@ -260,7 +260,7 @@ table {
 td,
 th {
   padding: 0;
-  line-height: 33px; }
+  line-height: 24px; }
 
 /* Code blocks */
 code {
