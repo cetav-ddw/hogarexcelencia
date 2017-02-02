@@ -1,47 +1,5 @@
 // Normalize
 // ==========================================================================
-// Correct the font size and margin on `h1` elements within `section` and
-// `article` contexts in Chrome, Firefox, and Safari.
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Change heading typefaces here */
-  font-family: sans-serif;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-  line-height: 1.5rem;
-}
-h1 {
-  font-size: 4.242rem;
-  line-height: 4.5rem;
-  margin-top: 3rem;
-}
-h2 {
-  font-size: 2.828rem;
-  line-height: 3rem;
-  margin-top: 3rem;
-}
-h3 {
-  font-size: 1.414rem;
-}
-h4 {
-  font-size: 0.707rem;
-}
-h5 {
-  font-size: 0.4713333333333333rem;
-}
-h6 {
-  font-size: 0.3535rem;
-}
-
 // 1. Add the correct box sizing in Firefox.
 // 2. Show the overflow in Edge and IE.
 hr {
@@ -118,30 +76,4 @@ sub {
 
 sup {
   top: -0.5em;
-}
-
-/* Code blocks */
-code {
-  vertical-align: bottom;
-}
-
-blockquote {
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-p {
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-}
-
-/* Leading paragraph text */
-.lead {
-  font-size: 1.414rem;
-}
-/* Hug the block above you */
-.hug {
-  margin-top: 0;
 }
