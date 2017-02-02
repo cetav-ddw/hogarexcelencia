@@ -5,7 +5,7 @@
 // 3. Prevent adjustments of font size after orientation changes in
 //    IE on Windows Phone and in iOS.
 html {
-    font-family: sans-serif; // 1
+    font-family: $font-family-base; // 1
     line-height: 1.15; // 2
     -ms-text-size-adjust: 100%; // 3
     -webkit-text-size-adjust: 100%; // 3
