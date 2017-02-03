@@ -1,0 +1,17 @@
+name = Hogar Noticias
+core = 7.x
+package = Hogar
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = field_noticias_img
+features[field_instance][] = node-noticias-body
+features[field_instance][] = node-noticias-field_noticias_img
+features[node][] = noticias
+features[views_view][] = noticias
+features_exclude[field_base][body] = body
+project path = sites/all/modules/features
