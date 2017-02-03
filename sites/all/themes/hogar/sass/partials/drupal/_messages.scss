@@ -1,0 +1,50 @@
+// ====================
+// system.messages.css
+// ====================
+// @file
+// Styles for system messages.
+.messages {
+    background-position: 8px 8px; 
+    background-repeat: no-repeat;
+    border: 1px solid;
+    margin: 6px 0;
+    padding: 10px 10px 10px 50px; 
+}
+
+.status {
+    background-image: url(../images/system-images/message-24-ok.png);
+    border-color: #be7;
+}
+
+.status,
+.ok {
+    color: #234600;
+    background-color: #f8fff0;
+}
+
+.warning {
+    background-image: url(../images/system-images/message-24-warning.png);
+    border-color: #ed5;
+    color: #840;
+    background-color: #fffce5;
+}
+
+.error {
+    background-image: url(../images/system-images/message-24-error.png);
+    border-color: #ed541d;
+    color: #8c2e0b;
+    background-color: #fef5f1;
+
+    p.error {
+        color: #333;
+    }
+}
+
+.messages ul {
+    margin: 0 0 0 1em; 
+    padding: 0;
+}
+
+.messages ul li {
+    list-style-image: none;
+}

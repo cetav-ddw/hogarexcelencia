@@ -1,13 +1,3 @@
-/**
- * @file
- * Generic theme-independent base styles.
- */
-/**
- * Autocomplete.
- *
- * @see autocomplete.js
- */
-/* Suggestion list */
 #autocomplete {
   border: 1px solid;
   overflow: hidden;
@@ -25,26 +15,17 @@
   color: #000;
   cursor: default;
   white-space: pre;
-  zoom: 1;
-  /* IE7 */ }
+  zoom: 1; }
 
-/* Animated throbber */
 html.js input.form-autocomplete {
   background-image: url(../images/system-images/throbber-inactive.png);
   background-position: 100% center;
-  /* LTR */
   background-repeat: no-repeat; }
 
 html.js input.throbbing {
   background-image: url(../images/system-images/throbber-active.gif);
-  background-position: 100% center;
-  /* LTR */ }
+  background-position: 100% center; }
 
-/**
- * Collapsible fieldsets.
- *
- * @see collapse.js
- */
 html.js fieldset.collapsed {
   border-bottom-width: 0;
   border-left-width: 0;
@@ -60,18 +41,10 @@ fieldset.collapsible {
 fieldset.collapsible .fieldset-legend {
   display: block; }
 
-/**
- * Resizable textareas.
- *
- * @see textarea.js
- */
 .form-textarea-wrapper textarea {
   display: block;
   margin: 0;
-  width: 100%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  width: 100%; }
 
 .resizable-textarea .grippie {
   background: #eee url(../images/system-images/grippie.png) no-repeat center 2px;
@@ -81,21 +54,14 @@ fieldset.collapsible .fieldset-legend {
   height: 9px;
   overflow: hidden; }
 
-/**
- * TableDrag behavior.
- *
- * @see tabledrag.js
- */
 body.drag {
   cursor: move; }
 
 .tabledrag-handle {
   cursor: move;
   float: left;
-  /* LTR */
   height: 1.7em;
   margin-left: -1em;
-  /* LTR */
   overflow: hidden;
   text-decoration: none; }
 
@@ -106,9 +72,7 @@ body.drag {
   background: url(../images/system-images/draggable.png) no-repeat 6px 9px;
   height: 13px;
   margin: -0.4em 0.5em;
-  /* LTR */
   padding: 0.42em 0.5em;
-  /* LTR */
   width: 13px; }
 
 .tabledrag-handle-hover .handle {
@@ -116,44 +80,27 @@ body.drag {
 
 .indentation {
   float: left;
-  /* LTR */
   height: 1.7em;
   margin: -0.4em 0.2em -0.4em -0.4em;
-  /* LTR */
   padding: 0.42em 0 0.42em 0.6em;
-  /* LTR */
   width: 20px; }
 
 .tree-child {
-  background: url(../images/system-images/tree.png) no-repeat 11px center;
-  /* LTR */ }
+  background: url(../images/system-images/tree.png) no-repeat 11px center; }
 
 .tree-child-last {
-  background: url(../images/system-images/tree-bottom.png) no-repeat 11px center;
-  /* LTR */ }
+  background: url(../images/system-images/tree-bottom.png) no-repeat 11px center; }
 
 .tree-child-horizontal {
   background: url(../images/system-images/tree.png) no-repeat -11px center; }
 
 .tabledrag-toggle-weight-wrapper {
-  text-align: right;
-  /* LTR */ }
+  text-align: right; }
 
-/**
- * TableHeader behavior.
- *
- * @see tableheader.js
- */
 .sticky-header {
   background-color: #fff;
   margin-top: 0; }
 
-/**
- * Progress behavior.
- *
- * @see progress.js
- */
-/* Bar */
 .progress .bar {
   background-color: #fff;
   border: 1px solid; }
@@ -164,17 +111,14 @@ body.drag {
   width: 5px; }
 
 .progress .percentage {
-  float: right;
-  /* LTR */ }
+  float: right; }
 
-/* Throbber */
 .ajax-progress {
   display: inline-block; }
 
 .ajax-progress .throbber {
-  background: transparent url(../images/system-images/throbber-active.gif) no-repeat 0px center;
+  background: transparent url(../images/system-images/throbber-active.gif) no-repeat 0 center;
   float: left;
-  /* LTR */
   height: 15px;
   margin: 2px;
   width: 15px; }
@@ -188,61 +132,29 @@ tr .ajax-progress .throbber {
 .ajax-progress-bar {
   width: 16em; }
 
-/**
- * Inline items.
- */
 .container-inline div,
 .container-inline label {
   display: inline; }
 
-/* Fieldset contents always need to be rendered as block. */
 .container-inline .fieldset-wrapper {
   display: block; }
 
-/**
- * Prevent text wrapping.
- */
 .nowrap {
   white-space: nowrap; }
 
-/**
- * For anything you want to hide on page load when JS is enabled, so
- * that you can use the JS to control visibility and avoid flicker.
- */
 html.js .js-hide {
   display: none; }
 
-/**
- * Hide elements from all users.
- *
- * Used for elements which should not be immediately displayed to any user. An
- * example would be a collapsible fieldset that will be expanded with a click
- * from a user. The effect of this class can be toggled with the jQuery show()
- * and hide() functions.
- */
 .element-hidden {
   display: none; }
 
-/**
- * Hide elements visually, but keep them available for screen-readers.
- *
- * Used for information required for screen-reader users to understand and use
- * the site where visual display is undesirable. Information provided in this
- * manner should be kept concise, to avoid unnecessary burden on the user.
- * "!important" is used to prevent unintentional overrides.
- */
 .element-invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   height: 1px; }
 
-/**
- * The .element-focusable class extends the .element-invisible class to allow
- * the element to be focusable when navigated to via the keyboard.
- */
 .element-invisible.element-focusable:active,
 .element-invisible.element-focusable:focus {
   position: static !important;
@@ -250,11 +162,6 @@ html.js .js-hide {
   overflow: visible;
   height: auto; }
 
-/**
- * Markup free clearing.
- *
- * @see http://perishablepress.com/press/2009/12/06/new-clearfix-hack
- */
 .clearfix:after {
   content: ".";
   display: block;
@@ -262,47 +169,26 @@ html.js .js-hide {
   clear: both;
   visibility: hidden; }
 
-/* IE7 */
 *:first-child + html .clearfix {
   min-height: 1%; }
 
-/**
- * Autocomplete.
- *
- * @see autocomplete.js
- */
-/* Suggestion list */
 #autocomplete li.selected {
   background: #0072b9;
   color: #fff; }
 
-/**
- * Collapsible fieldsets.
- *
- * @see collapse.js
- */
 html.js fieldset.collapsible .fieldset-legend {
   background: url(../images/system-images/menu-expanded.png) 5px 65% no-repeat;
-  /* LTR */
-  padding-left: 15px;
-  /* LTR */ }
+  padding-left: 15px; }
 
 html.js fieldset.collapsed .fieldset-legend {
   background-image: url(../images/system-images/menu-collapsed.png);
-  /* LTR */
-  background-position: 5px 50%;
-  /* LTR */ }
+  background-position: 5px 50%; }
 
 .fieldset-legend span.summary {
   color: #999;
   font-size: 0.9em;
   margin-left: 0.5em; }
 
-/**
- * Progress bar.
- *
- * @see progress.js
- */
 .progress {
   font-weight: bold; }
 
@@ -310,25 +196,17 @@ html.js fieldset.collapsed .fieldset-legend {
   background: #ccc;
   border-color: #666;
   margin: 0 0.2em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 .progress .filled {
   background: #0072b9 url(../images/system-images/progress.gif); }
 
-/**
- * @file
- * Styles for system messages.
- */
 .messages {
   background-position: 8px 8px;
-  /* LTR */
   background-repeat: no-repeat;
   border: 1px solid;
   margin: 6px 0;
-  padding: 10px 10px 10px 50px;
-  /* LTR */ }
+  padding: 10px 10px 10px 50px; }
 
 .status {
   background-image: url(../images/system-images/message-24-ok.png);
@@ -355,7 +233,6 @@ html.js fieldset.collapsed .fieldset-legend {
 
 .messages ul {
   margin: 0 0 0 1em;
-  /* LTR */
   padding: 0; }
 
 .messages ul li {
@@ -370,31 +247,25 @@ html.js fieldset.collapsed .fieldset-legend {
 td.revision-current {
   background: #ffc; }
 
-/* Field display */
 .field .field-label {
   font-weight: bold; }
 
 .field-label-inline .field-label,
 .field-label-inline .field-items {
-  float: left;
-  /*LTR*/ }
+  float: left; }
 
-/* Form display */
 form .field-multiple-table {
   margin: 0; }
 
 form .field-multiple-table th.field-label {
-  padding-left: 0;
-  /*LTR*/ }
+  padding-left: 0; }
 
 form .field-multiple-table td.field-multiple-drag {
   width: 30px;
-  padding-right: 0;
-  /*LTR*/ }
+  padding-right: 0; }
 
 form .field-multiple-table td.field-multiple-drag a.tabledrag-handle {
-  padding-right: .5em;
-  /*LTR*/ }
+  padding-right: .5em; }
 
 form .field-add-more-submit {
   margin: .5em 0 0; }
@@ -403,8 +274,7 @@ form .field-add-more-submit {
   font-weight: bold; }
 
 #permissions td.permission {
-  padding-left: 1.5em;
-  /* LTR */ }
+  padding-left: 1.5em; }
 
 #permissions tr.odd .form-item,
 #permissions tr.even .form-item {
@@ -414,26 +284,16 @@ form .field-add-more-submit {
   font-size: 0.85em;
   padding-bottom: .5em; }
 
-/**
- * Override default textfield float to put the "Add role" button next to
- * the input textfield.
- */
 #user-admin-roles td.edit-name {
   clear: both; }
 
 #user-admin-roles .form-item-name {
   float: left;
-  /* LTR */
-  margin-right: 1em;
-  /* LTR */ }
+  margin-right: 1em; }
 
-/**
- * Password strength indicator.
- */
 .password-strength {
   width: 17em;
   float: right;
-  /* LTR */
   margin-top: 1.4em; }
 
 .password-strength-title {
@@ -441,7 +301,6 @@ form .field-add-more-submit {
 
 .password-strength-text {
   float: right;
-  /* LTR */
   font-weight: bold; }
 
 .password-indicator {
@@ -461,7 +320,6 @@ input.password-field {
 
 div.password-confirm {
   float: right;
-  /* LTR */
   margin-top: 1.5em;
   visibility: hidden;
   width: 17em; }
@@ -478,33 +336,29 @@ div.password-suggestions ul {
 .confirm-parent,
 .password-parent {
   clear: left;
-  /* LTR */
   margin: 0;
   width: 36.3em; }
 
-/* Generated by user.module but used by profile.module: */
 .profile {
   clear: both;
   margin: 1em 0; }
 
 .profile .user-picture {
   float: right;
-  /* LTR */
-  margin: 0 1em 1em 0;
-  /* LTR */ }
+  margin: 0 1em 1em 0; }
 
 .profile h3 {
   border-bottom: 1px solid #ccc; }
 
 .profile dl {
-  margin: 0 0 1.5em 0; }
+  margin: 0 0 1.5em; }
 
 .profile dt {
-  margin: 0 0 0.2em 0;
+  margin: 0 0 0.2em;
   font-weight: bold; }
 
 .profile dd {
-  margin: 0 0 1em 0; }
+  margin: 0 0 1em; }
 
 .search-form {
   margin-bottom: 1em; }
@@ -526,32 +380,38 @@ div.password-suggestions ul {
   margin-bottom: 1em; }
 
 .search-results .search-snippet-info {
-  padding-left: 1em;
-  /* LTR */ }
+  padding-left: 1em; }
 
 .search-results .search-info {
   font-size: 0.85em; }
 
 .search-advanced .criterion {
   float: left;
-  /* LTR */
-  margin-right: 2em;
-  /* LTR */ }
+  margin-right: 2em; }
 
 .search-advanced .action {
   float: left;
-  /* LTR */
-  clear: left;
-  /* LTR */ }
+  clear: left; }
+
+* {
+  box-sizing: border-box; }
 
 html {
   font-family: "Poppins";
   line-height: 1.15;
+  width: 100%;
+  height: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
 body {
+  width: 100%;
+  min-height: 100%;
   margin: 0; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
 
 article,
 aside,
@@ -580,16 +440,21 @@ template {
 
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects; }
+  -webkit-text-decoration-skip: objects;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
 a:active,
 a:hover {
   outline-width: 0; }
 
 hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible; }
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
 
 pre {
   font-family: monospace, monospace;
@@ -651,6 +516,14 @@ audio:not([controls]) {
   display: none;
   height: 0; }
 
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
 button,
 input,
 optgroup,
@@ -694,7 +567,6 @@ fieldset {
   padding: 0.35em 0.625em 0.75em; }
 
 legend {
-  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -706,11 +578,11 @@ progress {
   vertical-align: baseline; }
 
 textarea {
-  overflow: auto; }
+  overflow: auto;
+  resize: vertical; }
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
   padding: 0; }
 
 [type="number"]::-webkit-inner-spin-button,

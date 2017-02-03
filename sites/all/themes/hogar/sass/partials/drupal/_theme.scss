@@ -1,0 +1,46 @@
+// ====================
+// system.theme.css
+// ====================
+// Autocomplete.
+// @see autocomplete.js
+ 
+// Suggestion list 
+#autocomplete li.selected {
+    background: #0072b9;
+    color: #fff;
+}
+
+// Collapsible fieldsets.
+// @see collapse.js
+html.js fieldset.collapsible .fieldset-legend {
+    background: url(../images/system-images/menu-expanded.png) 5px 65% no-repeat; 
+    padding-left: 15px; 
+}
+
+html.js fieldset.collapsed .fieldset-legend {
+    background-image: url(../images/system-images/menu-collapsed.png); 
+    background-position: 5px 50%; 
+}
+
+.fieldset-legend span.summary {
+    color: #999;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
+// Progress bar.
+// @see progress.js
+.progress {
+    font-weight: bold;
+}
+
+.progress .bar {
+    background: #ccc;
+    border-color: #666;
+    margin: 0 0.2em;
+    border-radius: 3px;
+}
+
+.progress .filled {
+    background: #0072b9 url(../images/system-images/progress.gif);
+}

@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+// Reset esta basados en:
+// https://github.com/necolas/normalize.css
+// https://github.com/google/material-design-lite/tree/mdl-1.x/src/resets
+
 // Normalize
 // ==========================================================================
 // 1. Change the default font family in all browsers (opinionated).
@@ -7,13 +15,26 @@
 html {
     font-family: $font-family-base; // 1
     line-height: 1.15; // 2
+    width: 100%;
+    height: 100%;
     -ms-text-size-adjust: 100%; // 3
     -webkit-text-size-adjust: 100%; // 3
 }
 
 // Remove the margin in all browsers (opinionated).
 body {
+    width: 100%;
+    min-height: 100%;
     margin: 0;
+}
+
+// Remove text-shadow in selection highlight:
+// https://twitter.com/miketaylr/status/12228805301
+// These selection rule sets have to be separate.
+// Customize the background color to match your design.
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 // Add the correct display in IE 9-.
