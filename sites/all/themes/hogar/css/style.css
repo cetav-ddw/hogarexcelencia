@@ -393,7 +393,9 @@ div.password-suggestions ul {
   float: left;
   clear: left; }
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box; }
 
 html {
