@@ -1,0 +1,7 @@
+name = Hogar Formulario
+core = 7.x
+package = Hogar
+dependencies[] = features
+features[features_api][] = api:2
+features[node][] = webform
+project path = sites/all/modules/features

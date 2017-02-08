@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Hogar Formulario feature.
+ */
+
+include_once 'hogar_formulario.features.inc';
