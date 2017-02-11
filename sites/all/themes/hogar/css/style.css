@@ -409,7 +409,8 @@ html {
 body {
   width: 100%;
   min-height: 100%;
-  margin: 0; }
+  margin: 0;
+  background: #3C475A; }
 
 ::selection {
   background: #b3d4fc;
@@ -602,6 +603,45 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit; }
+
+.icon-mision:before {
+  content: url(../images/icons/mision.png); }
+
+.icon-vision:before {
+  content: url(../images/icons/vision.png); }
+
+.icon-servicios:before {
+  content: url(../images/icons/servicios.png); }
+
+.icon-deportivas:before {
+  content: url(../images/icons/football.png); }
+
+.icon-capacitaciones:before {
+  content: url(../images/icons/capacitar.png); }
+
+.icon-donaciones:before {
+  content: url(../images/icons/camisa.png); }
+
+.icon-metamorfosis:before {
+  content: url(../images/icons/metamorfosis.png); }
+
+.icon-financiamiento:before {
+  content: url(../images/icons/donar.png); }
+
+.icon-patrocinio:before {
+  content: url(../images/icons/dar.png); }
+
+.icon-padrinaje:before {
+  content: url(../images/icons/oso.png); }
+
+.main {
+  background-color: #fff; }
+
+.header {
+  background-color: #F4EDD9; }
+
+.footer {
+  background-color: #00B1B6; }
 
 /*! Typebase.scss v0.1.0 | MIT License */
 /* Setup */

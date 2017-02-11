@@ -1,6 +1,7 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/drupal/system";
+
 @import "partials/elements/base";
 @import "partials/elements/links";
 @import "partials/elements/type";
@@ -9,4 +10,11 @@
 @import "partials/elements/media";
 @import "partials/elements/table";
 @import "partials/elements/forms";
+
+@import "partials/modules/icon-module";
+
+@import "partials/layout/main";
+@import "partials/layout/header";
+@import "partials/layout/footer";
+
 @import "partials/third-party/typebase";
