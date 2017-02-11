@@ -42,16 +42,6 @@
         <?php print $breadcrumb; ?>
     <?php endif; ?>
 
-    <?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
-    <?php print render($title_suffix); ?>
-
-    <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="">
-            <?php print render($page['sidebar_first']); ?>
-        </div>
-    <?php endif; ?>
-
     <?php if ($tabs): ?>
         <?php print render($tabs); ?>
     <?php endif; ?>
@@ -66,18 +56,14 @@
         <?php print render($page['content']); ?>
     <?php endif; ?>
 
-    <?php if ($page['below_content']): ?>
-        <?php print render($page['below_content']); ?>
-    <?php endif; ?>
-
 </div>
 
-<?php if ($page['extra_content']): ?>
-        <?php print render($page['extra_content']); ?>
+<?php if ($page['below_content']): ?>
+        <?php print render($page['below_content']); ?>
 <?php endif; ?>
 
-<?php if ($page['above_footer']): ?>
-    <?php print render($page['above_footer']); ?>
+<?php if ($page['cta']): ?>
+    <?php print render($page['cta']); ?>
 <?php endif; ?>
 
 <footer class="footer" role="contentinfo">
@@ -91,6 +77,3 @@
     <?php endif; ?>
 
 </footer>
-
-
-

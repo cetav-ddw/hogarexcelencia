@@ -23,11 +23,9 @@ regions[page_bottom]        = Page Bottom
 
 regions[header]             = Header
 regions[above_content]      = Above Content
-regions[sidebar_first]      = Sidebar First
 regions[content] 			= Content
 regions[below_content]      = Below Content
-regions[extra_content]      = Extra Content
-regions[above_footer]    	= Above footer
+regions[cta]    			= Call to action
 
 regions[footer_top]         = Footer Top
 regions[footer_bottom]      = Footer Bottom
@@ -47,3 +45,6 @@ stylesheets[all][] = system.base.css
 stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
+
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = layouts
