@@ -1,44 +1,53 @@
 .icon-module {
+	margin: 36px 18px 48px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 150px;
+}
+
+.icon-module h2 {
+	margin-top: 24px;
+	text-align: center;
 }
 
 // Icon classes
 
-.icon-mision:before {
-	content: url(../images/icons/mision.png);
+.icon-mision {
+	background-image: url(../images/icons/mision.png);
 }
 
-.icon-vision:before {
-	content: url(../images/icons/vision.png);
+.icon-vision {
+	background-image: url(../images/icons/vision.png);
 }
 
-.icon-servicios:before {
-	content: url(../images/icons/servicios.png);
+.icon-servicios {
+	background-image: url(../images/icons/servicios.png);
 }
 
-.icon-deportivas:before {
-	content: url(../images/icons/football.png);
+.icon-deportivas {
+	background-image: url(../images/icons/football.png);
 }
 
-.icon-capacitaciones:before {
-	content: url(../images/icons/capacitar.png);
+.icon-capacitaciones {
+	background-image: url(../images/icons/capacitar.png);
 }
 
-.icon-donaciones:before {
-	content: url(../images/icons/camisa.png);
+.icon-donaciones {
+	background-image: url(../images/icons/camisa.png);
 }
 
-.icon-metamorfosis:before {
-	content: url(../images/icons/metamorfosis.png);
+.icon-metamorfosis {
+	background-image: url(../images/icons/metamorfosis.png);
 }
 
-.icon-financiamiento:before {
-	content: url(../images/icons/donar.png);
+.icon-financiamiento {
+	background-image: url(../images/icons/donar.png);
 }
 
-.icon-patrocinio:before {
-	content: url(../images/icons/dar.png);
+.icon-patrocinio {
+	background-image: url(../images/icons/dar.png);
 }
 
-.icon-padrinaje:before {
-	content: url(../images/icons/oso.png);
+.icon-padrinaje {
+	background-image: url(../images/icons/oso.png);
 }

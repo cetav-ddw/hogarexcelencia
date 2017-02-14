@@ -396,7 +396,9 @@ div.password-suggestions ul {
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 html {
   font-family: "Poppins";
@@ -445,11 +447,16 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  font-family: "Baloo Paaji";
+  color: #F28D19; }
 
 a:active,
 a:hover {
-  outline-width: 0; }
+  outline: none; }
+
+a:hover {
+  text-decoration: underline; }
 
 hr {
   display: block;
@@ -604,41 +611,119 @@ textarea {
   -webkit-appearance: button;
   font: inherit; }
 
-.icon-mision:before {
-  content: url(../images/icons/mision.png); }
+.form-item {
+  margin-top: 24px; }
 
-.icon-vision:before {
-  content: url(../images/icons/vision.png); }
+.form-item label {
+  display: block;
+  margin-bottom: 10px; }
 
-.icon-servicios:before {
-  content: url(../images/icons/servicios.png); }
+.form-item label[class="option"] {
+  display: inline;
+  margin-bottom: 5px; }
 
-.icon-deportivas:before {
-  content: url(../images/icons/football.png); }
+.form-type-checkbox {
+  display: inline-block;
+  margin-right: 24px; }
 
-.icon-capacitaciones:before {
-  content: url(../images/icons/capacitar.png); }
+.form-item input {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  background: bottom no-repeat url(../images/textures/line.png); }
 
-.icon-donaciones:before {
-  content: url(../images/icons/camisa.png); }
+.form-item input:focus {
+  outline: none; }
 
-.icon-metamorfosis:before {
-  content: url(../images/icons/metamorfosis.png); }
+.button-primary {
+  padding: 5px 10px;
+  margin-top: 24px;
+  background-color: #F28D19;
+  border: none;
+  color: #fff;
+  cursor: pointer; }
 
-.icon-financiamiento:before {
-  content: url(../images/icons/donar.png); }
+.icon-module {
+  margin: 36px 18px 48px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 150px; }
 
-.icon-patrocinio:before {
-  content: url(../images/icons/dar.png); }
+.icon-module h2 {
+  margin-top: 24px;
+  text-align: center; }
 
-.icon-padrinaje:before {
-  content: url(../images/icons/oso.png); }
+.icon-mision {
+  background-image: url(../images/icons/mision.png); }
 
-.main {
-  background-color: #fff; }
+.icon-vision {
+  background-image: url(../images/icons/vision.png); }
+
+.icon-servicios {
+  background-image: url(../images/icons/servicios.png); }
+
+.icon-deportivas {
+  background-image: url(../images/icons/football.png); }
+
+.icon-capacitaciones {
+  background-image: url(../images/icons/capacitar.png); }
+
+.icon-donaciones {
+  background-image: url(../images/icons/camisa.png); }
+
+.icon-metamorfosis {
+  background-image: url(../images/icons/metamorfosis.png); }
+
+.icon-financiamiento {
+  background-image: url(../images/icons/donar.png); }
+
+.icon-patrocinio {
+  background-image: url(../images/icons/dar.png); }
+
+.icon-padrinaje {
+  background-image: url(../images/icons/oso.png); }
+
+.cta-container {
+  background-color: #ECCE49;
+  text-align: center;
+  margin-top: 200px;
+  padding: 60px 0; }
+
+.cta-container h2 {
+  color: #000;
+  position: relative;
+  z-index: 2; }
+
+.cta-container button {
+  padding: 5px 10px; }
+
+.cta-container:before {
+  position: absolute;
+  z-index: 1;
+  top: -125px;
+  left: 45%;
+  background-color: #ECCE49;
+  content: url(../images/icons/hands.png);
+  border-radius: 100px;
+  width: 200px;
+  padding: 20px 0; }
 
 .header {
   background-color: #F4EDD9; }
+
+.main {
+  background-color: #fff;
+  padding: 48px 72px 48px;
+  margin-bottom: 60px; }
+
+.wide-column {
+  padding: 48px 0; }
+
+.below-content {
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px; }
 
 .footer {
   background-color: #00B1B6; }
@@ -685,19 +770,19 @@ h5,
 h6 {
   /* Change heading typefaces here */
   font-family: "Baloo Paaji";
-  margin-top: 1.5rem;
   margin-bottom: 0;
   line-height: 1.5rem; }
 
 h1 {
   font-size: 3.6rem;
   line-height: 4.5rem;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  color: #00B1B6; }
 
 h2 {
   font-size: 2.4rem;
   line-height: 3rem;
-  margin-top: 3rem; }
+  color: #00B1B6; }
 
 h3 {
   font-size: 1.2rem; }

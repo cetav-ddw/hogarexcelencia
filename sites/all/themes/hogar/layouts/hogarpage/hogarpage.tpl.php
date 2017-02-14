@@ -11,27 +11,33 @@
  *   - $content['picture']: Main image.
  *   - $content['left']: Content in the left column.
  *   - $content['right']: Content in the right column.
- *   - $content['main']: Main Content.
+ *   - $content['wide']: Content in the wide column.
  */
 ?>
 <div class="panel-hogar clearfix panel-display" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
 
 	<?php if ($content['picture']): ?>
-        <?php print $content['picture']; ?>
-    <?php endif; ?>
+    <?php print $content['picture']; ?>
+  <?php endif; ?>
 
     <div class="main">
 
       <?php if ($content['left']): ?>
-          <?php print $content['left']; ?>
+          <div class="left-column">
+            <?php print $content['left']; ?>
+          </div>
       <?php endif; ?>
 
       <?php if ($content['right']): ?>
-          <?php print $content['right']; ?>
+          <div class="right-column">
+            <?php print $content['right']; ?>
+          </div>
       <?php endif; ?>
 
-      <?php if ($content['wide']): ?>
-          <?php print $content['wide']; ?>
+      <?php if ($content['wide']): ?> 
+          <div class="wide-column">
+            <?php print $content['wide']; ?>
+          </div>
       <?php endif; ?>
       
     </div>

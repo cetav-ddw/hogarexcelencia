@@ -38,10 +38,6 @@
 <div class="main-content">
     <a id="main-content"></a>
 
-    <?php if ($breadcrumb): ?>
-        <?php print $breadcrumb; ?>
-    <?php endif; ?>
-
     <?php if ($tabs): ?>
         <?php print render($tabs); ?>
     <?php endif; ?>
@@ -59,7 +55,9 @@
 </div>
 
 <?php if ($page['below_content']): ?>
+    <div class="below-content">
         <?php print render($page['below_content']); ?>
+    </div>
 <?php endif; ?>
 
 <?php if ($page['cta']): ?>

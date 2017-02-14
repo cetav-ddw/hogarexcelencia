@@ -117,3 +117,44 @@ textarea {
   -webkit-appearance: button; // 1
   font: inherit; // 2
 }
+
+// Theme forms
+
+.form-item {
+  margin-top: 24px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-item label[class="option"] {
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.form-type-checkbox {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.form-item input {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  background: bottom no-repeat url(../images/textures/line.png);
+}
+
+.form-item input:focus {
+  outline: none;
+}
+
+.button-primary {
+  padding: 5px 10px;
+  margin-top: 24px;
+  background-color: $brand-orange;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}

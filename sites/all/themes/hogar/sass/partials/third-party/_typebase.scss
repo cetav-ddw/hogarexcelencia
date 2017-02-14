@@ -57,7 +57,6 @@ h5,
 h6 {
     /* Change heading typefaces here */
     font-family: $font-family-headings;
-    margin-top: $leading;
     margin-bottom: 0;
     line-height: $leading;
 }
@@ -65,11 +64,12 @@ h1 {
     font-size: 3 * $scale * 1rem;
     line-height: 3 * $leading;
     margin-top: 2 * $leading;
+    color: $brand-turquoise;
 }
 h2 {
     font-size: 2 * $scale * 1rem;
     line-height: 2 * $leading;
-    margin-top: 2 * $leading;
+    color: $brand-turquoise;
 }
 h3 {
     font-size: 1 * $scale * 1rem;
