@@ -59,30 +59,21 @@ h6 {
     font-family: $font-family-headings;
     margin: 0;
     line-height: $leading;
+    margin-top: $leading;
 }
 h1 {
     font-size: 3 * $scale * 1rem;
     line-height: 3 * $leading;
     margin-top: 2 * $leading;
-    color: $brand-turquoise;
 }
 h2 {
     font-size: 2 * $scale * 1rem;
     line-height: 2 * $leading;
-    color: $brand-turquoise;
 }
-h3 {
+h3, h4, h5, h6 {
     font-size: 1 * $scale * 1rem;
 }
-h4 {
-    font-size: $scale / 2 * 1rem;
-}
-h5 {
-    font-size: $scale / 3 * 1rem;
-}
-h6 {
-    font-size: $scale / 4 * 1rem;
-}
+
 /* Tables */
 
 table {

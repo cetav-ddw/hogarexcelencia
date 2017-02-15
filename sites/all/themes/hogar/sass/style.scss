@@ -2,9 +2,12 @@
 @import "partials/mixins";
 @import "partials/drupal/system";
 
+@import "partials/third-party/typebase";
+
 @import "partials/elements/base";
 @import "partials/elements/links";
 @import "partials/elements/type";
+@import "partials/elements/headings";
 @import "partials/elements/lists";
 @import "partials/elements/images";
 @import "partials/elements/media";
@@ -13,9 +16,9 @@
 
 @import "partials/modules/icon-module";
 @import "partials/modules/cta";
+@import "partials/modules/webforms";
 
 @import "partials/layout/header";
 @import "partials/layout/main";
 @import "partials/layout/footer";
 
-@import "partials/third-party/typebase";

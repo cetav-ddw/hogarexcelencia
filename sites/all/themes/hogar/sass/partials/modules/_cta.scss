@@ -2,7 +2,7 @@
 	background-color: $theme-yellow;
 	text-align: center;
 	margin-top: 200px;
-	padding: 60px 0;
+	padding: 72px 0;
 }
 
 .cta-container h2 {
@@ -15,10 +15,10 @@
 	padding: 5px 10px;
 }
 
-.cta-container:before {
+.cta-icon:before {
 	position: absolute;
 	z-index: 1;
-	top: -125px;
+	top: -195px;
 	left: 45%;
 	background-color: $theme-yellow; 
 	content: url(../images/icons/hands.png);

@@ -56,9 +56,13 @@ button:-moz-focusring,
 
 // Change the border, margin, and padding in all browsers (opinionated).
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
+  border: 2px solid $brand-turquoise;
+  margin: 10px 5px;
   padding: 0.35em 0.625em 0.75em;
+}
+
+.below-content fieldset {
+  border: 2px solid #fff;
 }
 
 // 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -118,43 +122,96 @@ textarea {
   font: inherit; // 2
 }
 
-// Theme forms
+// Theme styles
 
-.form-item {
-  margin-top: 24px;
-}
-
-.form-item label {
-  display: block;
+label {
+  display: inline-block;
   margin-bottom: 10px;
 }
 
-.form-item label[class="option"] {
-  display: inline;
-  margin-bottom: 5px;
-}
-
-.form-type-checkbox {
-  display: inline-block;
-  margin-right: 24px;
-}
-
-.form-item input {
-  background-color: transparent;
-  color: #fff;
+input {
+  color: inherit;
   border: none;
-  background: bottom no-repeat url(../images/textures/line.png);
+  background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
 }
 
-.form-item input:focus {
+.below-content input {
+  background: bottom left no-repeat url(../images/textures/form-line-white.png) transparent;
+}
+
+input:focus {
   outline: none;
 }
 
-.button-primary {
-  padding: 5px 10px;
+button, input[type="submit"] {
+  font-weight: bold;
+  padding: 10px 15px;
   margin-top: 24px;
   background-color: $brand-orange;
+  background-image: none;
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: bottom no-repeat url("../images/textures/button-hover.png") $brand-orange;
+}
+
+input[type=text], 
+input[type=number],
+input[type=email] {
+  width: 100%;
+}
+
+input[type=checkbox]:not(old), input[type=radio]:not(old){
+  cursor: pointer;
+  width: 25px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+input[type=radio]:not(old) + label, input[type=checkbox]:not(old) + label {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: -25px;
+  padding-left: 25px;
+}
+
+input[type=radio]:not(old) + label {
+  background: url("../images/textures/circle-unchecked-turq.png") no-repeat 0 0;
+}
+
+.below-content input[type=radio]:not(old) + label {
+  background: url("../images/textures/circle-unchecked-white.png") no-repeat 0 0;
+}
+
+input[type=checkbox]:not(old) + label {
+  background: url("../images/textures/square-unchecked-turq.png") no-repeat 0 0;
+}
+
+.below-content input[type=checkbox]:not(old) + label {
+  background: url("../images/textures/square-unchecked-white.png") no-repeat 0 0;
+}
+
+input[type=checkbox]:not(old):checked + label{
+  background: url("../images/textures/square-checked-turq.png") no-repeat 0 0;
+}
+
+.below-content input[type=checkbox]:not(old):checked + label{
+  background: url("../images/textures/square-checked-white.png") no-repeat 0 0;
+}
+
+input[type=radio]:not(old):checked + label{
+  background: url("../images/textures/circle-checked-turq.png") no-repeat 0 0;
+}
+
+.below-content input[type=radio]:not(old):checked + label{
+  background: url("../images/textures/circle-checked-white.png") no-repeat 0 0;
+}
+
+input[type=file] {
+  background: transparent;
+  margin: 0 15px; 
 }
