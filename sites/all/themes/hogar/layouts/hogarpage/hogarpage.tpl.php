@@ -17,7 +17,9 @@
 <div class="panel-hogar clearfix panel-display" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
 
 	<?php if ($content['picture']): ?>
-    <?php print $content['picture']; ?>
+    <div class="header-img">
+      <?php print $content['picture']; ?>
+    </div>
   <?php endif; ?>
 
     <div class="main">

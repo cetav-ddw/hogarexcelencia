@@ -485,7 +485,8 @@ html {
   width: 100%;
   height: 100%;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden; }
 
 body {
   width: 100%;
@@ -843,29 +844,39 @@ input[type=file] {
   background-image: url(../images/icons/oso.png); }
 
 .cta-container {
+  color: #000;
   background-color: #ECCE49;
   text-align: center;
   margin-top: 200px;
-  padding: 72px 0; }
+  padding: 60px 0 72px 0; }
 
-.cta-container h2 {
-  color: #000;
-  position: relative;
-  z-index: 2; }
-
-.cta-container button {
-  padding: 5px 10px; }
-
-.cta-icon:before {
+.cta-container:before {
   position: absolute;
   z-index: 1;
-  top: -195px;
+  top: -130px;
   left: 45%;
   background-color: #ECCE49;
   content: url(../images/icons/hands.png);
   border-radius: 100px;
   width: 200px;
   padding: 20px 0; }
+
+.cta-arrows:before, .cta-arrows:after {
+  content: url(../images/textures/arrow.png);
+  padding: 0 15px;
+  position: relative;
+  top: 15px; }
+
+.cta-container h2 {
+  margin-bottom: 36px;
+  color: #000;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: inline-block; }
+
+.cta-container a {
+  margin: 24px; }
 
 .webform-component {
   margin-top: 24px; }
@@ -875,6 +886,12 @@ input[type=file] {
 
 .header {
   background-color: #F4EDD9; }
+
+.menu {
+  margin-bottom: 0; }
+
+.header-img img {
+  width: 100%; }
 
 .main {
   background-color: #fff;

@@ -1,28 +1,40 @@
 .cta-container {
+	color: #000;
 	background-color: $theme-yellow;
 	text-align: center;
 	margin-top: 200px;
-	padding: 72px 0;
+	padding: 60px 0 72px 0;
 }
 
-.cta-container h2 {
-	color: #000;
-	position: relative;
-	z-index: 2;
-}
-
-.cta-container button {
-	padding: 5px 10px;
-}
-
-.cta-icon:before {
+.cta-container:before {
 	position: absolute;
 	z-index: 1;
-	top: -195px;
+	top: -130px;
 	left: 45%;
 	background-color: $theme-yellow; 
 	content: url(../images/icons/hands.png);
 	border-radius: 100px;
 	width: 200px;
 	padding: 20px 0;
+}
+
+
+.cta-arrows:before, .cta-arrows:after {
+	content: url(../images/textures/arrow.png);
+	padding: 0 15px;
+	position: relative;
+	top: 15px;
+}
+
+.cta-container h2 {
+	margin-bottom: 36px;
+	color: #000;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.cta-container a {
+	margin: 24px;
 }
