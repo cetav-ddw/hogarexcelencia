@@ -1,15 +1,18 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000311}}
 #autocomplete {
   border: 1px solid;
   overflow: hidden;
   position: absolute;
   z-index: 100; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000318}}
 #autocomplete ul {
   list-style: none;
   list-style-image: none;
   margin: 0;
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000325}}
 #autocomplete li {
   background: #fff;
   color: #000;
@@ -17,35 +20,43 @@
   white-space: pre;
   zoom: 1; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000334}}
 html.js input.form-autocomplete {
   background-image: url(../images/system-images/throbber-inactive.png);
   background-position: 100% center;
   background-repeat: no-repeat; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000340}}
 html.js input.throbbing {
   background-image: url(../images/system-images/throbber-active.gif);
   background-position: 100% center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000347}}
 html.js fieldset.collapsed {
   border-bottom-width: 0;
   border-left-width: 0;
   border-right-width: 0;
   height: 1em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000354}}
 html.js fieldset.collapsed .fieldset-wrapper {
   display: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000358}}
 fieldset.collapsible {
   position: relative; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000362}}
 fieldset.collapsible .fieldset-legend {
   display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000368}}
 .form-textarea-wrapper textarea {
   display: block;
   margin: 0;
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000373}}
 .resizable-textarea .grippie {
   background: #eee url(../images/system-images/grippie.png) no-repeat center 2px;
   border: 1px solid #ddd;
@@ -54,9 +65,11 @@ fieldset.collapsible .fieldset-legend {
   height: 9px;
   overflow: hidden; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000384}}
 body.drag {
   cursor: move; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000388}}
 .tabledrag-handle {
   cursor: move;
   float: left;
@@ -65,9 +78,11 @@ body.drag {
   overflow: hidden;
   text-decoration: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\0000397}}
 .tabledrag-handle:hover {
   text-decoration: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003101}}
 .tabledrag-handle .handle {
   background: url(../images/system-images/draggable.png) no-repeat 6px 9px;
   height: 13px;
@@ -75,9 +90,11 @@ body.drag {
   padding: 0.42em 0.5em;
   width: 13px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003109}}
 .tabledrag-handle-hover .handle {
   background-position: 6px -11px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003113}}
 .indentation {
   float: left;
   height: 1.7em;
@@ -85,37 +102,47 @@ body.drag {
   padding: 0.42em 0 0.42em 0.6em;
   width: 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003121}}
 .tree-child {
   background: url(../images/system-images/tree.png) no-repeat 11px center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003125}}
 .tree-child-last {
   background: url(../images/system-images/tree-bottom.png) no-repeat 11px center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003129}}
 .tree-child-horizontal {
   background: url(../images/system-images/tree.png) no-repeat -11px center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003133}}
 .tabledrag-toggle-weight-wrapper {
   text-align: right; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003139}}
 .sticky-header {
   background-color: #fff;
   margin-top: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003147}}
 .progress .bar {
   background-color: #fff;
   border: 1px solid; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003151}}
 .progress .filled {
   background-color: #000;
   height: 1.5em;
   width: 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003156}}
 .progress .percentage {
   float: right; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003161}}
 .ajax-progress {
   display: inline-block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003165}}
 .ajax-progress .throbber {
   background: transparent url(../images/system-images/throbber-active.gif) no-repeat 0 center;
   float: left;
@@ -123,31 +150,40 @@ body.drag {
   margin: 2px;
   width: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003173}}
 .ajax-progress .message {
   padding-left: 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003177}}
 tr .ajax-progress .throbber {
   margin: 0 2px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003181}}
 .ajax-progress-bar {
   width: 16em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003186}}
 .container-inline div,
 .container-inline label {
   display: inline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003192}}
 .container-inline .fieldset-wrapper {
   display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003197}}
 .nowrap {
   white-space: nowrap; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003203}}
 html.js .js-hide {
   display: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003213}}
 .element-hidden {
   display: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003223}}
 .element-invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -155,6 +191,7 @@ html.js .js-hide {
   overflow: hidden;
   height: 1px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003233}}
 .element-invisible.element-focusable:active,
 .element-invisible.element-focusable:focus {
   position: static !important;
@@ -162,6 +199,7 @@ html.js .js-hide {
   overflow: visible;
   height: auto; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003243}}
 .clearfix:after {
   content: ".";
   display: block;
@@ -169,38 +207,47 @@ html.js .js-hide {
   clear: both;
   visibility: hidden; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_base\.scss}line{font-family:\00003252}}
 *:first-child + html .clearfix {
   min-height: 1%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_theme\.scss}line{font-family:\000038}}
 #autocomplete li.selected {
   background: #0072b9;
   color: #fff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_theme\.scss}line{font-family:\0000315}}
 html.js fieldset.collapsible .fieldset-legend {
   background: url(../images/system-images/menu-expanded.png) 5px 65% no-repeat;
   padding-left: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_theme\.scss}line{font-family:\0000320}}
 html.js fieldset.collapsed .fieldset-legend {
   background-image: url(../images/system-images/menu-collapsed.png);
   background-position: 5px 50%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_theme\.scss}line{font-family:\0000325}}
 .fieldset-legend span.summary {
   color: #999;
   font-size: 0.9em;
   margin-left: 0.5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_theme\.scss}line{font-family:\0000333}}
 .progress {
   font-weight: bold; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_theme\.scss}line{font-family:\0000337}}
 .progress .bar {
   background: #ccc;
   border-color: #666;
   margin: 0 0.2em;
   border-radius: 3px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_theme\.scss}line{font-family:\0000344}}
 .progress .filled {
   background: #0072b9 url(../images/system-images/progress.gif); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_messages\.scss}line{font-family:\000036}}
 .messages {
   background-position: 8px 8px;
   background-repeat: no-repeat;
@@ -208,193 +255,243 @@ html.js fieldset.collapsed .fieldset-legend {
   margin: 6px 0;
   padding: 10px 10px 10px 50px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_messages\.scss}line{font-family:\0000314}}
 .status {
   background-image: url(../images/system-images/message-24-ok.png);
   border-color: #be7; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_messages\.scss}line{font-family:\0000319}}
 .status,
 .ok {
   color: #234600;
   background-color: #f8fff0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_messages\.scss}line{font-family:\0000325}}
 .warning {
   background-image: url(../images/system-images/message-24-warning.png);
   border-color: #ed5;
   color: #840;
   background-color: #fffce5; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_messages\.scss}line{font-family:\0000332}}
 .error {
   background-image: url(../images/system-images/message-24-error.png);
   border-color: #ed541d;
   color: #8c2e0b;
   background-color: #fef5f1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_messages\.scss}line{font-family:\0000338}}
   .error p.error {
     color: #333; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_messages\.scss}line{font-family:\0000343}}
 .messages ul {
   margin: 0 0 0 1em;
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_messages\.scss}line{font-family:\0000348}}
 .messages ul li {
   list-style-image: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_node\.scss}line{font-family:\000034}}
 .node-unpublished {
   background-color: #fff4f4; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_node\.scss}line{font-family:\000037}}
 .preview .node {
   background-color: #ffffea; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_node\.scss}line{font-family:\0000310}}
 td.revision-current {
   background: #ffc; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_field\.scss}line{font-family:\000034}}
 .field .field-label {
   font-weight: bold; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_field\.scss}line{font-family:\000038}}
 .field-label-inline .field-label,
 .field-label-inline .field-items {
   float: left; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_field\.scss}line{font-family:\0000314}}
 form .field-multiple-table {
   margin: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_field\.scss}line{font-family:\0000318}}
 form .field-multiple-table th.field-label {
   padding-left: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_field\.scss}line{font-family:\0000322}}
 form .field-multiple-table td.field-multiple-drag {
   width: 30px;
   padding-right: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_field\.scss}line{font-family:\0000327}}
 form .field-multiple-table td.field-multiple-drag a.tabledrag-handle {
   padding-right: .5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_field\.scss}line{font-family:\0000331}}
 form .field-add-more-submit {
   margin: .5em 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\000034}}
 #permissions td.module {
   font-weight: bold; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\000037}}
 #permissions td.permission {
   padding-left: 1.5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000310}}
 #permissions tr.odd .form-item,
 #permissions tr.even .form-item {
   white-space: normal; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000314}}
 #user-admin-settings fieldset .fieldset-description {
   font-size: 0.85em;
   padding-bottom: .5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000321}}
 #user-admin-roles td.edit-name {
   clear: both; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000325}}
 #user-admin-roles .form-item-name {
   float: left;
   margin-right: 1em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000331}}
 .password-strength {
   width: 17em;
   float: right;
   margin-top: 1.4em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000337}}
 .password-strength-title {
   display: inline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000341}}
 .password-strength-text {
   float: right;
   font-weight: bold; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000346}}
 .password-indicator {
   background-color: #C4C4C4;
   height: 0.3em;
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000352}}
 .password-indicator div {
   height: 100%;
   width: 0%;
   background-color: #47C965; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000358}}
 input.password-confirm,
 input.password-field {
   width: 16em;
   margin-bottom: 0.4em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000364}}
 div.password-confirm {
   float: right;
   margin-top: 1.5em;
   visibility: hidden;
   width: 17em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000371}}
 div.form-item div.password-suggestions {
   padding: 0.2em 0.5em;
   margin: 0.7em 0;
   width: 38.5em;
   border: 1px solid #B4B4B4; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000378}}
 div.password-suggestions ul {
   margin-bottom: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000382}}
 .confirm-parent,
 .password-parent {
   clear: left;
   margin: 0;
   width: 36.3em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000391}}
 .profile {
   clear: both;
   margin: 1em 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\0000396}}
 .profile .user-picture {
   float: right;
   margin: 0 1em 1em 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\00003100}}
 .profile h3 {
   border-bottom: 1px solid #ccc; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\00003103}}
 .profile dl {
   margin: 0 0 1.5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\00003106}}
 .profile dt {
   margin: 0 0 0.2em;
   font-weight: bold; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_user\.scss}line{font-family:\00003110}}
 .profile dd {
   margin: 0 0 1em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\000034}}
 .search-form {
   margin-bottom: 1em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\000038}}
 .search-form input {
   margin-top: 0;
   margin-bottom: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\0000313}}
 .search-results {
   list-style: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\0000317}}
 .search-results p {
   margin-top: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\0000321}}
 .search-results .title {
   font-size: 1.2em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\0000325}}
 .search-results li {
   margin-bottom: 1em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\0000329}}
 .search-results .search-snippet-info {
   padding-left: 1em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\0000333}}
 .search-results .search-info {
   font-size: 0.85em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\0000337}}
 .search-advanced .criterion {
   float: left;
   margin-right: 2em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/drupal\/_search\.scss}line{font-family:\0000342}}
 .search-advanced .action {
   float: left;
   clear: left; }
 
 /*! Typebase.scss v0.1.0 | MIT License */
 /* Setup */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000312}}
 html {
   /* Change default typefaces here */
   font-family: "Poppins";
@@ -402,18 +499,22 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 /* Copy & Lists */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000327}}
 p {
   line-height: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000332}}
 ul,
 ol {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000336}}
   ul li,
   ol li {
     line-height: 1.5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000339}}
   ul ul,
   ul ol,
   ol ul,
@@ -421,12 +522,14 @@ ol {
     margin-top: 0;
     margin-bottom: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000345}}
 blockquote {
   line-height: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
 
 /* Headings */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000352}}
 h1,
 h2,
 h3,
@@ -439,46 +542,56 @@ h6 {
   line-height: 1.5rem;
   margin-top: 1.5rem; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000364}}
 h1 {
   font-size: 3.6rem;
   line-height: 4.5rem;
   margin-top: 3rem; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000369}}
 h2 {
   font-size: 2.4rem;
   line-height: 3rem; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000373}}
 h3, h4, h5, h6 {
   font-size: 1.2rem; }
 
 /* Tables */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000379}}
 table {
   margin-top: 1.5rem;
   border-spacing: 0px;
   border-collapse: collapse; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000384}}
 td,
 th {
   padding: 0;
   line-height: 24px; }
 
 /* Code blocks */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000391}}
 code {
   vertical-align: bottom; }
 
 /* Leading paragraph text */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\0000397}}
 .lead {
   font-size: 1.2rem; }
 
 /* Hug a the block above you */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/third-party\/_typebase\.scss}line{font-family:\00003102}}
 .hug {
   margin-top: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\000031}}
 *,
 *:before,
 *:after {
   box-sizing: border-box; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\0000317}}
 html {
   font-family: "Poppins";
   line-height: 1.15;
@@ -488,16 +601,19 @@ html {
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\0000328}}
 body {
   width: 100%;
   min-height: 100%;
   margin: 0;
   background: #3C475A; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\0000339}}
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\0000345}}
 article,
 aside,
 footer,
@@ -511,18 +627,23 @@ details,
 menu {
   display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\0000360}}
 figure {
   margin: 1em 40px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\0000365}}
 summary {
   display: list-item; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\0000370}}
 canvas {
   display: inline-block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_base\.scss}line{font-family:\0000375}}
 template {
   display: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_links\.scss}line{font-family:\000034}}
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -532,13 +653,16 @@ a {
   text-decoration: none;
   color: #F28D19; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_links\.scss}line{font-family:\0000316}}
 a:active,
 a:hover {
   outline-width: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_links\.scss}line{font-family:\0000321}}
 a:hover, a:focus {
   text-decoration: underline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\000034}}
 hr {
   display: block;
   height: 1px;
@@ -547,39 +671,48 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000314}}
 pre {
   font-family: monospace, monospace;
   font-size: 1em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000321}}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000328}}
 b,
 strong {
   font-weight: inherit; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000334}}
 b,
 strong {
   font-weight: bolder; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000341}}
 code,
 kbd,
 samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000349}}
 dfn {
   font-style: italic; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000354}}
 mark {
   background-color: #ff0;
   color: #000; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000360}}
 small {
   font-size: 80%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000366}}
 sub,
 sup {
   font-size: 75%;
@@ -587,42 +720,54 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000374}}
 sub {
   bottom: -0.25em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000378}}
 sup {
   top: -0.5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_type\.scss}line{font-family:\0000382}}
 q {
   font-style: italic; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_headings\.scss}line{font-family:\000035}}
 h1 {
   margin: 0.67em 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_headings\.scss}line{font-family:\000039}}
 h1, h2, h3 {
   color: #00B1B6; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_lists\.scss}line{font-family:\000031}}
 ul li {
   list-style-image: url("../images/textures/bullet-turquoise.png");
   padding-left: 10px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_lists\.scss}line{font-family:\000036}}
 .below-content ul li {
   list-style-image: url("../images/textures/bullet-white.png"); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_images\.scss}line{font-family:\000034}}
 img {
   border-style: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_images\.scss}line{font-family:\000039}}
 svg:not(:root) {
   overflow: hidden; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_media\.scss}line{font-family:\000034}}
 audio,
 video {
   display: inline-block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_media\.scss}line{font-family:\0000310}}
 audio:not([controls]) {
   display: none;
   height: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_media\.scss}line{font-family:\0000318}}
 audio,
 canvas,
 iframe,
@@ -631,24 +776,30 @@ svg,
 video {
   vertical-align: middle; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_media\.scss}line{font-family:\0000327}}
 p + img {
   margin-top: 24px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_table\.scss}line{font-family:\000031}}
 th, td {
   border: 2px solid #00B1B6;
   padding: 5px 10px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_table\.scss}line{font-family:\000036}}
 th {
   background-color: #00B1B6;
   color: #fff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_table\.scss}line{font-family:\0000311}}
 .below-content th, .below-content td {
   border: 2px solid #fff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_table\.scss}line{font-family:\0000315}}
 .below-content th {
   background-color: #fff;
   color: #00B1B6; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\000035}}
 button,
 input,
 optgroup,
@@ -659,20 +810,24 @@ textarea {
   line-height: 1.15;
   margin: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000318}}
 button,
 input {
   overflow: visible; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000325}}
 button,
 select {
   text-transform: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000333}}
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000341}}
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -680,20 +835,24 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000350}}
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000358}}
 fieldset {
   border: 2px solid #00B1B6;
   margin: 10px 5px;
   padding: 0.35em 0.625em 0.75em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000364}}
 .below-content fieldset {
   border: 2px solid #fff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000371}}
 legend {
   color: inherit;
   display: table;
@@ -701,49 +860,61 @@ legend {
   padding: 0;
   white-space: normal; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000381}}
 progress {
   display: inline-block;
   vertical-align: baseline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000388}}
 textarea {
   overflow: auto;
   resize: vertical; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\0000394}}
 [type="checkbox"],
 [type="radio"] {
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003100}}
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003107}}
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003113}}
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003120}}
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003127}}
 label {
   display: inline-block;
   margin-bottom: 10px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003132}}
 input {
   color: inherit;
   border: none;
   background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003138}}
 .below-content input {
   background: bottom left no-repeat url(../images/textures/form-line-white.png) transparent; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003142}}
 input:focus {
   outline: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003146}}
 button, input[type="submit"] {
   font-weight: bold;
   padding: 10px 15px;
@@ -754,14 +925,17 @@ button, input[type="submit"] {
   color: #fff;
   cursor: pointer; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003157}}
 button:hover, input[type="submit"]:hover {
   background: bottom no-repeat url("../images/textures/button-hover.png") #F28D19; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003161}}
 input[type=text],
 input[type=number],
 input[type=email] {
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003167}}
 input[type=checkbox]:not(old), input[type=radio]:not(old) {
   cursor: pointer;
   width: 25px;
@@ -769,80 +943,103 @@ input[type=checkbox]:not(old), input[type=radio]:not(old) {
   padding: 0;
   opacity: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003175}}
 input[type=radio]:not(old) + label, input[type=checkbox]:not(old) + label {
   cursor: pointer;
   display: inline-block;
   margin-left: -25px;
   padding-left: 25px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003182}}
 input[type=radio]:not(old) + label {
   background: url("../images/textures/circle-unchecked-turq.png") no-repeat 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003186}}
 .below-content input[type=radio]:not(old) + label {
   background: url("../images/textures/circle-unchecked-white.png") no-repeat 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003190}}
 input[type=checkbox]:not(old) + label {
   background: url("../images/textures/square-unchecked-turq.png") no-repeat 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003194}}
 .below-content input[type=checkbox]:not(old) + label {
   background: url("../images/textures/square-unchecked-white.png") no-repeat 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003198}}
 input[type=checkbox]:not(old):checked + label {
   background: url("../images/textures/square-checked-turq.png") no-repeat 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003202}}
 .below-content input[type=checkbox]:not(old):checked + label {
   background: url("../images/textures/square-checked-white.png") no-repeat 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003206}}
 input[type=radio]:not(old):checked + label {
   background: url("../images/textures/circle-checked-turq.png") no-repeat 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003210}}
 .below-content input[type=radio]:not(old):checked + label {
   background: url("../images/textures/circle-checked-white.png") no-repeat 0 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/elements\/_forms\.scss}line{font-family:\00003214}}
 input[type=file] {
   background: transparent;
   margin: 0 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\000031}}
 .icon-module {
   margin: 36px 18px 48px;
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 150px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\000038}}
 .icon-module h2 {
   margin-top: 24px;
   text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000315}}
 .icon-mision {
   background-image: url(../images/icons/mision.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000319}}
 .icon-vision {
   background-image: url(../images/icons/vision.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000323}}
 .icon-servicios {
   background-image: url(../images/icons/servicios.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000327}}
 .icon-deportivas {
   background-image: url(../images/icons/football.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000331}}
 .icon-capacitaciones {
   background-image: url(../images/icons/capacitar.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000335}}
 .icon-donaciones {
   background-image: url(../images/icons/camisa.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000339}}
 .icon-metamorfosis {
   background-image: url(../images/icons/metamorfosis.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000343}}
 .icon-financiamiento {
   background-image: url(../images/icons/donar.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000347}}
 .icon-patrocinio {
   background-image: url(../images/icons/dar.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_icon-module\.scss}line{font-family:\0000351}}
 .icon-padrinaje {
   background-image: url(../images/icons/oso.png); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_cta\.scss}line{font-family:\000031}}
 .cta-container {
   color: #000;
   background-color: #ECCE49;
@@ -851,6 +1048,7 @@ input[type=file] {
   padding: 60px 0 72px 0;
   position: relative; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_cta\.scss}line{font-family:\0000310}}
 .cta-container:before {
   position: absolute;
   z-index: 1;
@@ -862,12 +1060,14 @@ input[type=file] {
   width: 200px;
   padding: 20px 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_cta\.scss}line{font-family:\0000323}}
 .cta-arrows:before, .cta-arrows:after {
   content: url(../images/textures/arrow.png);
   padding: 0 15px;
   position: relative;
   top: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_cta\.scss}line{font-family:\0000330}}
 .cta-container h2 {
   margin-bottom: 36px;
   color: #000;
@@ -876,46 +1076,87 @@ input[type=file] {
   cursor: pointer;
   display: inline-block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_cta\.scss}line{font-family:\0000339}}
 .cta-container a {
   margin: 24px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_webforms\.scss}line{font-family:\000033}}
 .webform-component {
   margin-top: 24px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_webforms\.scss}line{font-family:\000037}}
 .webform-submit {
   width: 100%; }
 
+@media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_menu\.scss}line{font-family:\000032}}
+  nav > .menu {
+    height: 100vh; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_menu\.scss}line{font-family:\000036}}
+  .dropdown-menu {
+    float: right;
+    margin: 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_menu\.scss}line{font-family:\0000310}}
+    .dropdown-menu span {
+      color: #3C475A;
+      font: 4vw "Baloo Paaji";
+      margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_menu\.scss}line{font-family:\0000316}}
+    .dropdown-menu img {
+      width: 10vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_menu\.scss}line{font-family:\0000321}}
+  .block-menu {
+    display: inline; } }
+@media (max-width: 360px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_menu\.scss}line{font-family:\0000327}}
+  .dropdown-menu {
+    margin-top: 6%; } }
+@media (max-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/modules\/_menu\.scss}line{font-family:\0000333}}
+  .dropdown-menu {
+    display: none; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_header\.scss}line{font-family:\000031}}
 .header {
   background-color: #F4EDD9; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_header\.scss}line{font-family:\000035}}
 .menu {
   margin-bottom: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_header\.scss}line{font-family:\000039}}
 .header-img img {
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_main\.scss}line{font-family:\000031}}
 .main {
   background-color: #fff;
   padding: 48px 72px 48px;
   margin-bottom: 60px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_main\.scss}line{font-family:\000037}}
 .wide-column {
   padding: 48px 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_main\.scss}line{font-family:\0000311}}
 .below-content {
   color: #fff;
   width: 80%;
   margin: 0 auto;
   max-width: 1200px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_main\.scss}line{font-family:\0000318}}
 .content-1col {
   width: 50%;
   max-width: 800px;
   margin: 0 auto; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_footer\.scss}line{font-family:\000031}}
 .footer {
   background-color: #00B1B6; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/MAMP\/htdocs\/hogar-excelencia-familiar\/sites\/all\/themes\/hogar\/sass\/partials\/layout\/_footer\.scss}line{font-family:\000035}}
 .footer h2, .footer h3 {
   color: #000; }
 

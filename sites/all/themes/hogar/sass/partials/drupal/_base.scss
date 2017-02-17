@@ -27,19 +27,19 @@
     color: #000;
     cursor: default;
     white-space: pre;
-    zoom: 1; // IE7 
+    zoom: 1; // IE7
 }
 
-// Animated throbber 
+// Animated throbber
 html.js input.form-autocomplete {
     background-image: url(../images/system-images/throbber-inactive.png);
-    background-position: 100% center; 
+    background-position: 100% center;
     background-repeat: no-repeat;
 }
 
 html.js input.throbbing {
     background-image: url(../images/system-images/throbber-active.gif);
-    background-position: 100% center; 
+    background-position: 100% center;
 }
 
 // Collapsible fieldsets.
@@ -87,9 +87,9 @@ body.drag {
 
 .tabledrag-handle {
     cursor: move;
-    float: left; 
+    float: left;
     height: 1.7em;
-    margin-left: -1em; 
+    margin-left: -1em;
     overflow: hidden;
     text-decoration: none;
 }
@@ -101,8 +101,8 @@ body.drag {
 .tabledrag-handle .handle {
     background: url(../images/system-images/draggable.png) no-repeat 6px 9px;
     height: 13px;
-    margin: -0.4em 0.5em; 
-    padding: 0.42em 0.5em; 
+    margin: -0.4em 0.5em;
+    padding: 0.42em 0.5em;
     width: 13px;
 }
 
@@ -111,19 +111,19 @@ body.drag {
 }
 
 .indentation {
-    float: left; 
+    float: left;
     height: 1.7em;
-    margin: -0.4em 0.2em -0.4em -0.4em; 
-    padding: 0.42em 0 0.42em 0.6em; 
+    margin: -0.4em 0.2em -0.4em -0.4em;
+    padding: 0.42em 0 0.42em 0.6em;
     width: 20px;
 }
 
 .tree-child {
-    background: url(../images/system-images/tree.png) no-repeat 11px center; 
+    background: url(../images/system-images/tree.png) no-repeat 11px center;
 }
 
 .tree-child-last {
-    background: url(../images/system-images/tree-bottom.png) no-repeat 11px center; 
+    background: url(../images/system-images/tree-bottom.png) no-repeat 11px center;
 }
 
 .tree-child-horizontal {
@@ -131,7 +131,7 @@ body.drag {
 }
 
 .tabledrag-toggle-weight-wrapper {
-    text-align: right; 
+    text-align: right;
 }
 
 // TableHeader behavior.
@@ -143,7 +143,7 @@ body.drag {
 
 // Progress behavior.
 // @see progress.js
-// Bar 
+// Bar
 .progress .bar {
     background-color: #fff;
     border: 1px solid;
@@ -154,17 +154,17 @@ body.drag {
     width: 5px;
 }
 .progress .percentage {
-    float: right; 
+    float: right;
 }
 
-// Throbber 
+// Throbber
 .ajax-progress {
     display: inline-block;
 }
 
 .ajax-progress .throbber {
     background: transparent url(../images/system-images/throbber-active.gif) no-repeat 0 center;
-    float: left; 
+    float: left;
     height: 15px;
     margin: 2px;
     width: 15px;
@@ -188,7 +188,7 @@ tr .ajax-progress .throbber {
     display: inline;
 }
 
-// Fieldset contents always need to be rendered as block. 
+// Fieldset contents always need to be rendered as block.
 .container-inline .fieldset-wrapper {
     display: block;
 }
@@ -222,7 +222,7 @@ html.js .js-hide {
 // "!important" is used to prevent unintentional overrides.
 .element-invisible {
     position: absolute !important;
-    clip: rect(1px 1px 1px 1px); // IE6, IE7 
+    clip: rect(1px 1px 1px 1px); // IE6, IE7
     clip: rect(1px, 1px, 1px, 1px);
     overflow: hidden;
     height: 1px;
@@ -247,7 +247,8 @@ html.js .js-hide {
     clear: both;
     visibility: hidden;
 }
-// IE7 
+
+// IE7
 *:first-child + html .clearfix {
     min-height: 1%;
 }
