@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,yBAA0B;EACtB,KAAK;IACD,OAAO,EAAE,IAAI",
-"sources": ["../../../sass/partials/modules/menu.scss"],
-"names": [],
-"file": "menu.css"
-}
