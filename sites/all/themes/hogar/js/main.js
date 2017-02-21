@@ -21,4 +21,4 @@ jQuery(document).ready(function($) {
 		    top: '-=10',
 		}, 200, 'linear', function() {$ctaButton.css('top', '0');});
 	});
-}
+});
