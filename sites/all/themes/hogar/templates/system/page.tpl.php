@@ -10,7 +10,7 @@
  */
 ?>
 
-<header class="header" role="banner">
+<header class="header clearfix" role="banner">
 
     <?php if ($messages): ?>
         <div class="messages-wrapper">
@@ -23,9 +23,10 @@
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo"/>
       </a>
     <?php endif; ?>
+    <a href="#" id="dropdown-menu" class="dropdown-menu">Menú</a>
 
     <?php print render($page['header']); ?>
 

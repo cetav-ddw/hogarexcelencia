@@ -253,7 +253,7 @@ $databases = array (
       'username' => 'root',
       'password' => 'root',
       'host' => 'localhost',
-      'port' => '8889',
+      'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
     ),

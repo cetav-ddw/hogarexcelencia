@@ -36,7 +36,8 @@ stylesheets[all][] = css/style.css
 
 ;-------------- JS -------------
 
-scripts[] = js/main.js 
+scripts[] = js/enquire.js
+scripts[] = js/main.js
 
 ;-------------- FOAD -------------
 stylesheets[all][] = node.css

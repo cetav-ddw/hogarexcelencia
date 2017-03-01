@@ -1,0 +1,132 @@
+.logo {
+    padding: 10px 0 10px 10px;
+    width: 200px;
+}
+
+.dropdown-menu {
+    color: $brand-blue;
+    font-size: 18px;
+    float: right;
+    margin: 35px 25px 0 0;
+}
+
+.principal-menu {
+    background-color: $brand-blue;
+    font-size: 18px;
+    height: 100vh;
+    padding-top: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 280px;
+    z-index: 20;
+
+    @media (min-width: 900px) {
+        
+        background-color: transparent;
+        font-size: 16px;
+        float: right;
+        height: auto;
+        margin: 10px 10px 0 0;
+        padding: 0;
+        position: static;
+        width: auto;
+    }
+
+    li {
+        list-style: none;
+        padding: 0 0 5px 0;
+    }
+
+    a {
+        color: #fff;
+
+        @media (min-width: 900px) {
+            color: $brand-blue;
+            background: none;
+        }
+
+        &:focus {
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            @media (min-width: 900px) {
+                background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
+            }
+        }
+
+        &:active {
+            background: bottom left no-repeat url(../images/textures/form-line-white.png) transparent;
+
+            @media (min-width: 900px) {
+                background: none;
+            }
+        }
+    }
+    
+    & > .menu > li {
+        padding-bottom: 20px;
+
+        @media (min-width: 900px){
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+
+    & > .menu > li > a {
+        background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
+        
+        @media (min-width: 900px) {
+            background: none;
+        }
+
+        &:hover {
+            @media (min-width: 900px) {
+                background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
+            }  
+        }
+    }
+
+    & > .menu > li > .menu {
+        margin-top: 5px;                   
+        @media (min-width: 900px) {
+            display: none;
+            margin: 0;
+        }
+    }
+
+    // Dropdown
+    & > .menu > li:hover {
+        @media (min-width: 900px) {
+            position: relative;
+        }
+        & > ul{
+            @media (min-width: 900px) {
+                background-color: $theme-cream;
+                display: block;
+                left: 0;
+                padding: 20px 0 0 0;
+                position: absolute;
+                left: -45px;
+                text-align: center;
+                width: 170px;
+            }
+        }   
+    }
+} 
+
+.icon-menu {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.opacity {
+    background-color: $theme-cream;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+}
