@@ -885,25 +885,102 @@ input[type=file] {
 .webform-submit {
   width: 100%; }
 
-@media (max-width: 700px) {
-  nav > .menu {
-    height: 100vh; }
+.logo {
+  padding: 10px 0 10px 10px;
+  width: 200px; }
 
-  .dropdown-menu {
-    float: right;
-    margin: 5%; }
-    .dropdown-menu span {
-      color: #3C475A;
-      font: 4vw "Baloo Paaji";
-      margin-right: 10px; }
-    .dropdown-menu img {
-      width: 10vw; }
+.dropdown-menu {
+  color: #3C475A;
+  font-size: 18px;
+  float: right;
+  margin: 35px 25px 0 0; }
 
-  .block-menu {
-    display: inline; } }
-@media (max-width: 360px) {
-  .dropdown-menu {
-    margin-top: 6%; } }
+.principal-menu {
+  background-color: #3C475A;
+  font-size: 18px;
+  height: 100vh;
+  padding-top: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 280px;
+  z-index: 20; }
+  @media (min-width: 900px) {
+    .principal-menu {
+      background-color: transparent;
+      font-size: 16px;
+      float: right;
+      height: auto;
+      margin: 10px 10px 0 0;
+      padding: 0;
+      position: static;
+      width: auto; } }
+  .principal-menu li {
+    list-style: none;
+    padding: 0 0 5px 0; }
+  .principal-menu a {
+    color: #fff; }
+    @media (min-width: 900px) {
+      .principal-menu a {
+        color: #3C475A;
+        background: none; } }
+    .principal-menu a:focus {
+      text-decoration: none; }
+    .principal-menu a:hover {
+      text-decoration: none; }
+      @media (min-width: 900px) {
+        .principal-menu a:hover {
+          background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent; } }
+    .principal-menu a:active {
+      background: bottom left no-repeat url(../images/textures/form-line-white.png) transparent; }
+      @media (min-width: 900px) {
+        .principal-menu a:active {
+          background: none; } }
+  .principal-menu > .menu > li {
+    padding-bottom: 20px; }
+    @media (min-width: 900px) {
+      .principal-menu > .menu > li {
+        display: inline-block;
+        margin-right: 20px; } }
+  .principal-menu > .menu > li > a {
+    background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent; }
+    @media (min-width: 900px) {
+      .principal-menu > .menu > li > a {
+        background: none; } }
+    @media (min-width: 900px) {
+      .principal-menu > .menu > li > a:hover {
+        background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent; } }
+  .principal-menu > .menu > li > .menu {
+    margin-top: 5px; }
+    @media (min-width: 900px) {
+      .principal-menu > .menu > li > .menu {
+        display: none;
+        margin: 0; } }
+  @media (min-width: 900px) {
+    .principal-menu > .menu > li:hover {
+      position: relative; } }
+  @media (min-width: 900px) {
+    .principal-menu > .menu > li:hover > ul {
+      background-color: #F4EDD9;
+      display: block;
+      left: 0;
+      padding: 20px 0 0 0;
+      position: absolute;
+      left: -45px;
+      text-align: center;
+      width: 170px; } }
+
+.icon-menu {
+  font-size: 30px;
+  margin-left: 15px; }
+
+.opacity {
+  background-color: #F4EDD9;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%; }
+
 .header {
   background-color: #F4EDD9; }
 
