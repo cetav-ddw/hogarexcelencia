@@ -4,6 +4,9 @@
   margin-top: 24px;
 }
 
-.webform-submit {
+.webform-submit,
+.webform-component input[type=text], 
+.webform-component input[type=number],
+.webform-component input[type=email] {
   width: 100%;
 }
