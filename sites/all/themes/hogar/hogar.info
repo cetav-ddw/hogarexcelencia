@@ -53,3 +53,11 @@ stylesheets[all][] = system.theme.css
 
 ; Panels layouts. You can place multiple layouts under the "layouts" folder.
 plugins[panels][layouts] = layouts
+
+;-------------- Picture -------------
+
+; For Picture 2.x
+breakpoints[huge] = (min-width: 1200px)
+breakpoints[big] = (min-width: 850px)
+breakpoints[medium] = (min-width: 500px)
+breakpoints[small] = (min-width: 0px)
