@@ -1,7 +1,10 @@
 .main {
 	background-color: #fff;
-	padding: 48px 72px 48px;
+	padding: 48px;
 	margin-bottom: 60px;
+	@media (min-width: 500px) {
+		padding: 48px 72px 48px;
+	}
 }
 
 .wide-column {
