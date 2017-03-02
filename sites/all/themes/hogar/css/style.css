@@ -807,7 +807,19 @@ input[type=file] {
   margin: 0 15px; }
 
 .icon-module {
-  margin: 36px 18px 48px; }
+  margin: 36px 0 60px; }
+  @media (min-width: 800px) {
+    .icon-module {
+      width: 45%;
+      max-width: 400px;
+      margin: 36px auto 0;
+      padding: 0 20px;
+      float: left;
+      min-height: 500px; } }
+  @media (min-width: 1200px) {
+    .icon-module {
+      width: 30%;
+      max-width: 550px; } }
 
 .icon-module h2 {
   text-align: center; }
@@ -816,6 +828,9 @@ input[type=file] {
   display: block;
   margin: 0 auto 24px;
   content: ""; }
+
+.s-icon {
+  min-height: 0; }
 
 .icon-mision:before {
   background: url("../images/icons/spritesheet.png") no-repeat -133px -266px;
@@ -1073,14 +1088,20 @@ input[type=file] {
 
 .main {
   background-color: #fff;
-  padding: 48px;
-  margin-bottom: 60px; }
+  padding: 36px;
+  margin-bottom: 48px; }
   @media (min-width: 500px) {
     .main {
-      padding: 48px 72px 48px; } }
+      padding: 48px 72px 48px;
+      margin-bottom: 60px; } }
 
 .wide-column {
-  padding: 48px 0; }
+  padding: 48px 0 36px;
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 500px) {
+    .wide-column {
+      padding: 48px 0; } }
 
 .below-content {
   color: #fff;
@@ -1088,11 +1109,11 @@ input[type=file] {
   margin: 0 auto;
   max-width: 1200px; }
 
-.content-1col {
-  width: 50%;
-  max-width: 800px;
-  margin: 0 auto; }
-
+@media (min-width: 1200px) {
+  .content-1col {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto; } }
 .footer {
   background-color: #00B1B6; }
 

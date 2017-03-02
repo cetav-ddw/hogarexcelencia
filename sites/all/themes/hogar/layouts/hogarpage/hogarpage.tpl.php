@@ -37,7 +37,7 @@
       <?php endif; ?>
 
       <?php if ($content['wide']): ?> 
-          <div class="wide-column">
+          <div class="wide-column clearfix">
             <?php print $content['wide']; ?>
           </div>
       <?php endif; ?>
