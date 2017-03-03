@@ -62,7 +62,11 @@
 <?php endif; ?>
 
 <?php if ($page['cta']): ?>
-    <?php print render($page['cta']); ?>
+    <div class="cta-container">
+        <div class="cta-wrapper clearfix">
+            <?php print render($page['cta']); ?>
+        </div>
+    </div>
 <?php endif; ?>
 
 <footer class="footer" role="contentinfo">

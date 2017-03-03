@@ -2,30 +2,21 @@ jQuery(document).ready(function($) {
 	$('body').prepend('<div id="opacity"></div>');
 	var $mobileMenu = $('#principal-menu'); //Menu
 	// Call to action animations
-	var $ctaContent = $('#cta-hidden');
-	$ctaContent.addClass('element-hidden');
+	var $ctaContent = $('.cta-content');
+	$ctaContent.hide();
 	var $ctaButton = $('#cta-button');
 
 	$ctaButton.click(function() {
 		$ctaContent.slideToggle( 'slow' );
-	});
-
-	$ctaButton.mouseenter(function() {
-		$ctaButton.css('top', '0');
-		$ctaButton.stop().animate ({
-		    top: '+=10',
-		}, 200, 'linear')
-	});
-
-	$ctaButton.mouseleave(function() {
-		$ctaButton.stop().animate ({
-		    top: '-=10',
-		}, 200, 'linear', function() {$ctaButton.css('top', '0');});
+		if ($ctaButton.hasClass('fix-padding')) {
+			$ctaButton.removeClass('fix-padding')
+		} else {$ctaButton.addClass('fix-padding')}
 	});
 
 	// Register when match a viewport of 320px
 	enquire.register('screen and (min-width:320px) and (max-width:899px)', {
 		match : function() {
+
 			// Hide menu and show the mobile menu
 			$mobileMenu.addClass('element-hidden');
 			$('#dropdown-menu').removeClass('element-hidden');
@@ -57,7 +48,6 @@ jQuery(document).ready(function($) {
 			});
 		},      
 		unmatch : function() {
-
 		},    
 	})
 
@@ -72,6 +62,20 @@ jQuery(document).ready(function($) {
 			// Remove the event of the document
 			$(document).click(function(){
 				$mobileMenu.removeClass('element-hidden');
+			});
+
+			// Hover animations
+			$ctaButton.mouseenter(function() {
+				$ctaButton.css('top', '0');
+				$ctaButton.stop().animate ({
+				    top: '+=10',
+				}, 200, 'linear')
+			});
+
+			$ctaButton.mouseleave(function() {
+				$ctaButton.stop().animate ({
+				    top: '-=10',
+				}, 200, 'linear', function() {$ctaButton.css('top', '0');});
 			});
 		},
 		unmatch : function() {

@@ -62,13 +62,20 @@ h6 {
     margin-top: $leading;
 }
 h1 {
-    font-size: 3 * $scale * 1rem;
-    line-height: 3 * $leading;
+    line-height: 2 * $leading;
     margin-top: 2 * $leading;
+    font-size: 2 * $scale * 1rem;
+    @media (min-width: 550px) {
+        font-size: 3 * $scale * 1rem;
+        line-height: 3 * $leading;
+    }
 }
 h2 {
-    font-size: 2 * $scale * 1rem;
     line-height: 2 * $leading;
+    font-size: 1.5 * $scale * 1rem;
+    @media (min-width: 550px) {
+        font-size: 2 * $scale * 1rem;
+    }
 }
 h3, h4, h5, h6 {
     font-size: 1 * $scale * 1rem;
