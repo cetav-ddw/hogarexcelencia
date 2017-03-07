@@ -394,14 +394,14 @@ div.password-suggestions ul {
   clear: left; }
 
 /*! Typebase.scss v0.1.0 | MIT License */
-/* Setup */
 html {
-  /* Change default typefaces here */
   font-family: "Poppins";
-  font-size: 100%;
+  font-size: 90%;
   -webkit-font-smoothing: antialiased; }
+  @media only screen and (min-width: 1100px) {
+    html {
+      font-size: 100%; } }
 
-/* Copy & Lists */
 p {
   line-height: 1.5rem;
   margin-top: 1.5rem;
@@ -426,14 +426,12 @@ blockquote {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
 
-/* Headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  /* Change heading typefaces here */
   font-family: "Baloo Paaji";
   margin: 0;
   line-height: 1.5rem;
@@ -442,7 +440,7 @@ h6 {
 h1 {
   line-height: 3rem;
   margin-top: 3rem;
-  font-size: 2.4rem; }
+  font-size: 2.3rem; }
   @media (min-width: 550px) {
     h1 {
       font-size: 3.6rem;
@@ -458,7 +456,6 @@ h2 {
 h3, h4, h5, h6 {
   font-size: 1.2rem; }
 
-/* Tables */
 table {
   margin-top: 1.5rem;
   border-spacing: 0px;
@@ -469,7 +466,6 @@ th {
   padding: 0;
   line-height: 24px; }
 
-/* Code blocks */
 code {
   vertical-align: bottom; }
 
@@ -535,7 +531,6 @@ a {
   -webkit-text-decoration-skip: objects;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  font-family: "Baloo Paaji";
   text-decoration: underline;
   color: #F28D19; }
 
@@ -606,7 +601,9 @@ q {
 h1 {
   margin: 0.67em 0; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #00B1B6; }
 
 ul li {
@@ -832,6 +829,42 @@ input[type=file] {
 .s-icon {
   min-height: 0; }
 
+.sprite:before {
+  background-image: url("../images/icons/spritesheet.png"); }
+
+.icon-phone:before {
+  background-position: -413px -145px;
+  content: "";
+  width: 22px;
+  height: 23px;
+  position: absolute;
+  left: 0; }
+
+.icon-mail:before {
+  background-position: -411px -184px;
+  content: "";
+  width: 25px;
+  height: 19px;
+  position: absolute;
+  left: 0; }
+
+.icon-location:before {
+  background-position: -417px -216px;
+  content: "";
+  width: 22px;
+  height: 27px;
+  position: absolute;
+  left: 0; }
+
+.icon-facebook:before {
+  background-position: -379px -341px;
+  content: "";
+  width: 50px;
+  height: 49px;
+  position: absolute;
+  right: 0;
+  top: -5px; }
+
 .icon-mision:before {
   background: url("../images/icons/spritesheet.png") no-repeat -133px -266px;
   width: 150px;
@@ -923,7 +956,8 @@ input[type=file] {
   display: inline-block; }
 
 @media (min-width: 600px) {
-  .cta-arrows:before, .cta-arrows:after {
+  .cta-arrows:before,
+  .cta-arrows:after {
     display: inline-block;
     content: "";
     background: url("../images/icons/spritesheet.png") no-repeat -380px -266px;
@@ -972,14 +1006,95 @@ input[type=file] {
 
   .float-right {
     float: right; } }
-.webform-component {
-  margin-top: 24px; }
+.footer-component a:link,
+.footer-component a:visited {
+  color: #fff;
+  text-decoration: none; }
+.footer-component a:hover {
+  text-decoration: underline; }
+.footer-component li {
+  list-style: none;
+  padding: 0;
+  position: relative; }
+.footer-component ul {
+  margin: 1rem 0;
+  padding-left: 0; }
+@media only screen and (min-width: 700px) {
+  .footer-component {
+    float: left;
+    width: 25%; } }
 
-.webform-submit,
-.webform-component input[type=text],
-.webform-component input[type=number],
-.webform-component input[type=email] {
-  width: 100%; }
+.footer-component--contact li,
+.footer-component--contact p {
+  color: #fff; }
+.footer-component--contact li {
+  margin: 10px 0;
+  padding-left: 32px; }
+@media only screen and (min-width: 700px) {
+  .footer-component--contact {
+    width: 50%; }
+    .footer-component--contact .footer-component-title {
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-top: 0; } }
+
+.footer-component--follow {
+  position: relative; }
+  @media only screen and (min-width: 700px) {
+    .footer-component--follow {
+      width: 50%; }
+      .footer-component--follow:before {
+        content: "";
+        width: 2px;
+        background: #fff;
+        display: block;
+        height: 100px;
+        position: absolute;
+        left: -20px;
+        top: 50%; }
+      .footer-component--follow .footer-component-title {
+        text-align: right; }
+      .footer-component--follow .icon-facebook {
+        position: relative;
+        padding-right: 60px; } }
+
+.footer-component-title {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  position: relative;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 700px) {
+    .footer-component-title {
+      font-size: 1.5rem;
+      text-transform: none; } }
+
+.ui-footer-accordion {
+  border-top: 1px solid #fff;
+  padding-bottom: 1rem; }
+  @media only screen and (min-width: 700px) {
+    .ui-footer-accordion {
+      border: 0; } }
+  .ui-footer-accordion a {
+    display: block;
+    padding: 5px 0; }
+    @media only screen and (min-width: 700px) {
+      .ui-footer-accordion a {
+        padding-bottom: 2px;
+        padding-top: 2px; } }
+  .ui-footer-accordion ul {
+    display: none; }
+    @media only screen and (min-width: 700px) {
+      .ui-footer-accordion ul {
+        display: block; } }
+  .ui-footer-accordion.is-open ul {
+    display: block; }
+  .ui-footer-accordion .footer-component-title {
+    margin-top: 1rem; }
+    @media only screen and (min-width: 700px) {
+      .ui-footer-accordion .footer-component-title {
+        margin-top: 0; } }
 
 .logo {
   padding: 10px 0 10px 10px;
@@ -1077,11 +1192,17 @@ input[type=file] {
   position: absolute;
   width: 100%; }
 
+.webform-component {
+  margin-top: 24px; }
+
+.webform-submit,
+.webform-component input[type=text],
+.webform-component input[type=number],
+.webform-component input[type=email] {
+  width: 100%; }
+
 .header {
   background-color: #F4EDD9; }
-
-.menu {
-  margin-bottom: 0; }
 
 .header-img img {
   width: 100%; }
@@ -1115,10 +1236,27 @@ input[type=file] {
     max-width: 800px;
     margin: 0 auto; } }
 .footer {
-  background-color: #00B1B6; }
+  background: #11767b url("../images/textures/p6.png") repeat;
+  overflow: hidden; }
 
-.footer h2, .footer h3 {
-  color: #000; }
+.footer-bottom {
+  overflow: hidden; }
+
+.footer-top {
+  background: #00B1B6 url("../images/textures/p6.png") repeat;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 0 .75em; }
+
+.l-footer {
+  overflow: hidden;
+  padding: 2.5em .75em; }
+  @media only screen and (min-width: 700px) {
+    .l-footer {
+      padding: 2.5em; } }
+  @media only screen and (min-width: 1100px) {
+    .l-footer {
+      padding: 3em 4em; } }
 
 [hidden] {
   display: none; }

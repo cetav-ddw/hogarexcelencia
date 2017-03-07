@@ -6,7 +6,6 @@ a {
     -webkit-text-decoration-skip: objects; // 2
     -webkit-tap-highlight-color: transparent; // 3
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    font-family: $font-family-headings;
     text-decoration:underline;
     color: $brand-orange;
 }
@@ -15,7 +14,7 @@ a {
 // in all browsers (opinionated).
 a:active,
 a:hover {
-  outline-width: 0;
+    outline-width: 0;
 }
 
 a:hover, a:focus {

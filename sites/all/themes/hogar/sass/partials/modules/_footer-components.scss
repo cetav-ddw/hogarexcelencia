@@ -1,0 +1,122 @@
+.footer-component {
+    a:link,
+    a:visited {
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    li {
+        list-style: none;
+        padding: 0;
+        position: relative;
+    }
+    ul {
+        margin: 1rem 0;
+        padding-left: 0;
+    }
+
+    @include query(700px) {
+        float: left;
+        width: 25%;
+    }
+}
+
+.footer-component--contact {
+    li,
+    p {
+        color: #fff;
+    }
+
+    li {
+        margin: 10px 0;
+        padding-left: 32px;
+    }
+
+    @include query(700px) {
+        width: 50%;
+
+        .footer-component-title {
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-top: 0;
+        }
+    }
+}
+
+.footer-component--follow {
+    position: relative;
+
+    @include query(700px) {
+        width: 50%;
+
+        &:before {
+            content: "";
+            width: 2px;
+            background: #fff;
+            display: block;
+            height: 100px;
+            position: absolute;
+            left: -20px;
+            top: 50%;
+        }
+        .footer-component-title {
+            text-align: right;
+        }
+        .icon-facebook {
+            position: relative;
+            padding-right: 60px;
+        }
+    }
+}
+
+.footer-component-title {
+    color: #fff;
+    font-family: $font-family-base;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    position: relative;
+    text-transform: uppercase;
+
+    @include query(700px) {
+        font-size: 1.5rem;
+        text-transform: none;
+    }
+}
+
+.ui-footer-accordion {
+    border-top: 1px solid #fff;
+    padding-bottom: 1rem;
+
+    @include query(700px) {
+        border: 0;
+    }
+
+    a {
+        display: block;
+        padding: 5px 0;
+
+        @include query(700px) {
+            padding-bottom: 2px;
+            padding-top: 2px;
+        }
+    }
+    ul {
+        display: none;
+
+        @include query(700px) {
+            display: block;
+        }
+    }
+    &.is-open ul {
+        display: block;
+    }
+    .footer-component-title {
+        margin-top: 1rem;
+
+        @include query(700px) {
+            margin-top: 0;
+        }
+    }
+}

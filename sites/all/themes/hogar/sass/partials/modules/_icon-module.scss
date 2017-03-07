@@ -1,91 +1,132 @@
 .icon-module {
-	margin: 36px 0 60px;
-	@media (min-width: 800px) {
-		width: 45%;
-		max-width: 400px;
-		margin: 36px auto 0;
-		padding: 0 20px;
-		float: left;
-		min-height: 500px;
-	}
-	@media (min-width: 1200px) {
-		width: 30%;
-		max-width: 550px;
-	}
+    margin: 36px 0 60px;
+    @media (min-width: 800px) {
+        width: 45%;
+        max-width: 400px;
+        margin: 36px auto 0;
+        padding: 0 20px;
+        float: left;
+        min-height: 500px;
+    }
+    @media (min-width: 1200px) {
+        width: 30%;
+        max-width: 550px;
+    }
 }
 
 .icon-module h2 {
-	text-align: center;
+    text-align: center;
 }
 
 .icon-module:before {
-	display: block;
-	margin: 0 auto 24px;
-	content: "";
+    display: block;
+    margin: 0 auto 24px;
+    content: "";
 }
 
 .s-icon {
-	min-height: 0;
+    min-height: 0;
 }
 
 // Icon classes
+.sprite:before {
+    background-image: url('../images/icons/spritesheet.png');
+}
 
+.icon-phone:before {
+    background-position: -413px -145px;
+    content: "";
+    width: 22px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+}
+
+.icon-mail:before {
+    background-position: -411px -184px;
+    content: "";
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    left: 0;
+}
+
+.icon-location:before {
+    background-position: -417px -216px;
+    content: "";
+    width: 22px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+}
+
+.icon-facebook:before {
+    background-position: -379px -341px;
+    content: "";
+    width: 50px;
+    height: 49px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+// ToDo: Eliminar el import del sprite en cada bloque.
 .icon-mision:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -133px -266px;
-	width: 150px;
-	height: 126px;
+    background: url('../images/icons/spritesheet.png') no-repeat -133px -266px;
+    width: 150px;
+    height: 126px;
 }
 
 .icon-vision:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -6px -266px;
-	width: 125px;
-	height: 124px;
+    background: url('../images/icons/spritesheet.png') no-repeat -6px -266px;
+    width: 125px;
+    height: 124px;
 }
 
 .icon-servicios:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -273px -137px;
-	width: 128px;
-	height: 125px;
+    background: url('../images/icons/spritesheet.png') no-repeat -273px -137px;
+    width: 128px;
+    height: 125px;
 }
 
 .icon-deportivas:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -147px -138px;
-	width: 124px;
-	height: 125px;
+    background: url('../images/icons/spritesheet.png') no-repeat -147px -138px;
+    width: 124px;
+    height: 125px;
 }
 
 .icon-capacitaciones:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -286px -267px;
-	width: 90px;
-	height: 124px;
+    background: url('../images/icons/spritesheet.png') no-repeat -286px -267px;
+    width: 90px;
+    height: 124px;
 }
 
 .icon-donaciones:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -329px -6px;
-	width: 113px;
-	height: 124px;
+    background: url('../images/icons/spritesheet.png') no-repeat -329px -6px;
+    width: 113px;
+    height: 124px;
 }
 
 .icon-metamorfosis:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -156px -395px;
-	width: 109px;
-	height: 125px;
+    background: url('../images/icons/spritesheet.png') no-repeat -156px -395px;
+    width: 109px;
+    height: 125px;
 }
 
 .icon-financiamiento:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -6px -5px;
-	width: 103px;
-	height: 126px;
+    background: url('../images/icons/spritesheet.png') no-repeat -6px -5px;
+    width: 103px;
+    height: 126px;
 }
 
 .icon-patrocinio:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -5px -396px;
-	width: 147px;
-	height: 124px;
+    background: url('../images/icons/spritesheet.png') no-repeat -5px -396px;
+    width: 147px;
+    height: 124px;
 }
 
 .icon-padrinaje:before {
-	background: url('../images/icons/spritesheet.png') no-repeat -267px -396px;
-	width: 85px;
-	height: 127px;
+    background: url('../images/icons/spritesheet.png') no-repeat -267px -396px;
+    width: 85px;
+    height: 127px;
 }

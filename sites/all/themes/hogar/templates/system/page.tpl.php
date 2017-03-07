@@ -9,9 +9,7 @@
  *
  */
 ?>
-
 <header class="header clearfix" role="banner">
-
     <?php if ($messages): ?>
         <div class="messages-wrapper">
             <div class="messages-content">
@@ -26,7 +24,8 @@
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo"/>
       </a>
     <?php endif; ?>
-    <a href="#" id="dropdown-menu" class="dropdown-menu">Menú</a>
+
+    <a href="#" id="dropdown-menu" class="dropdown-menu">Menu</a>
 
     <?php print render($page['header']); ?>
 
@@ -70,13 +69,19 @@
 <?php endif; ?>
 
 <footer class="footer" role="contentinfo">
-
     <?php if ($page['footer_top']): ?>
-        <?php print render($page['footer_top']); ?>
+        <div class="footer-top">
+            <div class="l-footer">
+                <?php print render($page['footer_top']); ?>
+            </div>
+        </div>
     <?php endif; ?>
 
     <?php if ($page['footer_bottom']): ?>
-        <?php print render($page['footer_bottom']); ?>
+        <div class="footer-bottom">
+            <div class="l-footer">
+                <?php print render($page['footer_bottom']); ?>
+            </div>
+        </div>
     <?php endif; ?>
-
 </footer>
