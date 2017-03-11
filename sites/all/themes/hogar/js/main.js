@@ -1,9 +1,8 @@
 jQuery(document).ready(function($) {
-
-  // ToDo: usar un patron, ordenar los componentes y el enquire
+    
     (function(window){
-        // Viariables
-        var $mobileMenu = $('#principal-menu'); //Menu
+        // Variables
+        var $mobileMenu = $('#principal-menu');
         var $menu = $('#dropdown-menu');
         var $ctaContent = $('.cta-content');
         var $ctaButton = $('#cta-button');
@@ -26,8 +25,12 @@ jQuery(document).ready(function($) {
         }
 
         var enquireModule = function() {
+            var $opacity = $('#opacity');
+            var $close = $('#close-menu');
+                       
             // Register when match a viewport of 320px
             enquire.register('screen and (min-width:320px) and (max-width:899px)', {
+                
                 match: function() {
                     $('.js-footer-accordion').click(function(e) {
                         var $itemClicked = $(e.currentTarget);
@@ -37,27 +40,27 @@ jQuery(document).ready(function($) {
                     // Hide menu and show the mobile menu
                     $mobileMenu.addClass('element-hidden');
                     $menu.removeClass('element-hidden');
-                    $('#icon-menu').removeClass('element-hidden');
+                    $close.removeClass('element-hidden');
 
                     // Show the menu when you click the word 'menu'
                     $menu.click(function(){
                         $mobileMenu.removeClass('element-hidden');
-                        // Adds a opacity
-                        $('#opacity').removeClass('element-hidden').addClass('opacity');
+                        // Adds a opacity                      
+                        $opacity.removeClass('element-hidden').addClass('opacity');
                     });
 
-                    // When you click the 'X' hides the menu and the opacity
-                    $('#icon-menu').click(function(){
+                    // When you click "Cerrar" hides the menu and the opacity
+                    $close.click(function(){
                         $mobileMenu.addClass('element-hidden');
-                        $('.opacity').addClass('element-hidden');
+                        $opacity.addClass('element-hidden');
                     });
 
                     // When you click outside the menu hides the menu and the opacity
                     // ToDo: le estan haciendo click a document, se ejecuta siempre
                     // si ponen un breakpoint en el devtools lo van a ver
-                    $(document).click(function(){
+                    $opacity.click(function(){
                         $mobileMenu.addClass('element-hidden');
-                        $('.opacity').addClass('element-hidden');
+                        $opacity.addClass('element-hidden');
                     });
                     $mobileMenu.click(function(e){
                         e.stopPropagation();
@@ -77,8 +80,8 @@ jQuery(document).ready(function($) {
                     // Show menu when we are not in mobile and hide the mobile menu
                     $mobileMenu.removeClass('element-hidden');
                     $menu.addClass('element-hidden');
-                    $('#icon-menu').addClass('element-hidden');
-                    $(document).unbind('click');
+                    $close.addClass('element-hidden');
+                    $opacity.addClass('element-hidden');
 
                     // Hover animations
                     $ctaButton.mouseenter(function() {
