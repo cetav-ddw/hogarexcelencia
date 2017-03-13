@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
         var ready = function() {
             $('body').prepend('<div id="opacity"></div>');
             $ctaContent.hide();
-        }
+        };
 
         var ctaAnimation = function () {
             // Call to action animations
@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
                     $ctaButton.removeClass('fix-padding')
                 } else {$ctaButton.addClass('fix-padding')}
             });
-        }
+        };
 
         var enquireModule = function() {
             var $opacity = $('#opacity');
@@ -32,46 +32,76 @@ jQuery(document).ready(function($) {
             enquire.register('screen and (min-width:320px) and (max-width:899px)', {
                 
                 match: function() {
-                    $('.js-footer-accordion').click(function(e) {
-                        var $itemClicked = $(e.currentTarget);
-                        $itemClicked.toggleClass('is-open');
-                    });
-
                     // Hide menu and show the mobile menu
                     $mobileMenu.addClass('element-hidden');
                     $menu.removeClass('element-hidden');
                     $close.removeClass('element-hidden');
 
+
+                    //Funtions
+                    $('.js-footer-accordion').click(function(e) {
+                        var $itemClicked = $(e.currentTarget);
+                        $itemClicked.toggleClass('is-open');
+                    });
+
+                    // Toogle display of the word "Cerrar" in header
+                    var toogleClose = function toogleClose () {
+                        if ($mobileMenu.hasClass('element-hidden')) {
+                            $close.addClass('element-hidden');
+                        }
+                    };
+
+                    // Hides the word "Cerrar"
+
+                    toogleClose();
+
+                    // Toogle animation of menu
+
+                    var hideMenu = function hideMenu () {
+                        $mobileMenu.animate({
+                            right: '-100%'
+                        });
+                        $close.animate({
+                            right: '-100%'
+                        });
+                    };
+
                     // Show the menu when you click the word 'menu'
                     $menu.click(function(){
                         $mobileMenu.removeClass('element-hidden');
+                        $mobileMenu.animate({
+                            right: '0'
+                        });
+                        $close.animate({
+                            right: '20px'
+                        });
                         // Adds a opacity                      
                         $opacity.removeClass('element-hidden').addClass('opacity');
+                        
+                        if (!$mobileMenu.hasClass('element-hidden')) {
+                            $close.removeClass('element-hidden');
+                        }
                     });
 
-                    // When you click "Cerrar" hides the menu and the opacity
+                    // When you click "Cerrar" hides the menu, "Cerrar" and the opacity
                     $close.click(function(){
-                        $mobileMenu.addClass('element-hidden');
+                        // $mobileMenu.addClass('element-hidden');
                         $opacity.addClass('element-hidden');
+                        hideMenu();
+                        // toogleClose();
                     });
 
                     // When you click outside the menu hides the menu and the opacity
-                    // ToDo: le estan haciendo click a document, se ejecuta siempre
-                    // si ponen un breakpoint en el devtools lo van a ver
                     $opacity.click(function(){
-                        $mobileMenu.addClass('element-hidden');
                         $opacity.addClass('element-hidden');
+                        hideMenu();
+                        // toogleClose();
                     });
-                    $mobileMenu.click(function(e){
-                        e.stopPropagation();
-                    });
-                    $menu.click(function(e){
-                        e.stopPropagation();
-                    });
-                },      
+                },
+                
                 unmatch: function() {
                     $('.js-footer-accordion').removeClass('is-open').unbind('click');
-                },    
+                },
             })
 
             // Register when match a viewport of 900px
@@ -107,7 +137,7 @@ jQuery(document).ready(function($) {
             ready: ready,
             cta: ctaAnimation,
             enquire: enquireModule
-        }
+        };
 
     }(window));
     
