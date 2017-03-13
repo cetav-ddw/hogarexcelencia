@@ -1,0 +1,23 @@
+.photo-module-container .view-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.photo-module {
+	width: 35%;
+	margin: 48px auto;
+}
+
+.photo-module h2 {
+	text-align: center;
+}
+
+.photo-module img {
+	text-align: center;
+	position: relative;
+	transform: translate(-50%);
+	left: 50%;
+	border-bottom-right-radius: 100px;
+	border-top-left-radius: 100px;
+	margin-right: 60px;
+}

@@ -40,3 +40,8 @@
     position: static;
     width: auto;
 }
+
+// Overwrite drupal admin theme classes
+.admin-menu-icon {
+    margin:0;
+}

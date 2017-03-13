@@ -24,17 +24,21 @@
 
     <div class="main">
 
-      <?php if ($content['left']): ?>
-          <div class="left-column">
-            <?php print $content['left']; ?>
-          </div>
-      <?php endif; ?>
+      <div class="clearfix">
 
-      <?php if ($content['right']): ?>
-          <div class="right-column">
-            <?php print $content['right']; ?>
-          </div>
-      <?php endif; ?>
+        <?php if ($content['left']): ?>
+            <div class="left-column">
+              <?php print $content['left']; ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if ($content['right']): ?>
+            <div class="right-column">
+              <?php print $content['right']; ?>
+            </div>
+        <?php endif; ?>
+
+      </div>
 
       <?php if ($content['wide']): ?> 
           <div class="wide-column clearfix">

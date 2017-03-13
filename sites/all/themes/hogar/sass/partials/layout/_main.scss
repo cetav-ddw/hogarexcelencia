@@ -6,6 +6,28 @@
 	@media (min-width: 500px) {
 		padding: 48px 72px 48px;
 		margin-bottom: 60px;
+		position: relative;
+		width: 90%;
+		left: 10%;
+		top: -75px;
+	}
+}
+
+.left-column {
+	@media (min-width: 1200px) {	
+		display: inline-block;
+		float: left;
+		margin-right: 100px;
+		min-width: 300px;
+		max-width: 500px;
+	}
+}
+
+.right-column {
+	max-width: 500px;
+
+	@media (min-width: 1200px) {
+		float: left;
 	}
 }
 

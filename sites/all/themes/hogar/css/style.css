@@ -614,7 +614,8 @@ ul li {
   list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJNJREFUeNpi+P//PwMSFgDiLCA2QBOHY2SOAxB/+A8BIPoaEC+AGoKhIQGIH/zHDh4BsS2yBgMkk/EBsDOZGBgYgoCYn4EwmAEmgbou/CcOfARiBZANGxiIA4+A+AFIwwIiNeyBOcmAgFP+AfF6WPAiR9gGHBrOA7ENLFgZwboQwAGIC4CYFYiXQUMPRH+AKQAIMACTyjZUGL4iKwAAAABJRU5ErkJggg=="); }
 
 img {
-  border-style: none; }
+  border-style: none;
+  margin: 24px 0; }
 
 svg:not(:root) {
   overflow: hidden; }
@@ -830,7 +831,8 @@ input[type=file] {
   min-height: 0; }
 
 .sprite:before {
-  background-image: url("../images/icons/spritesheet.png"); }
+  background-image: url("../images/icons/spritesheet.png");
+  background-repeat: no-repeat; }
 
 .icon-phone:before {
   background-position: -413px -145px;
@@ -866,54 +868,84 @@ input[type=file] {
   top: -5px; }
 
 .icon-mision:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -133px -266px;
+  background-position: -133px -266px;
   width: 150px;
   height: 126px; }
 
 .icon-vision:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -6px -266px;
+  background-position: -6px -266px;
   width: 125px;
   height: 124px; }
 
 .icon-servicios:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -273px -137px;
+  background-position: -273px -137px;
   width: 128px;
   height: 125px; }
 
 .icon-deportivas:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -147px -138px;
+  background-position: -147px -138px;
   width: 124px;
   height: 125px; }
 
 .icon-capacitaciones:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -286px -267px;
+  background-position: -286px -267px;
   width: 90px;
   height: 124px; }
 
 .icon-donaciones:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -329px -6px;
+  background-position: -329px -6px;
   width: 113px;
   height: 124px; }
 
 .icon-metamorfosis:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -156px -395px;
+  background-position: -156px -395px;
   width: 109px;
   height: 125px; }
 
 .icon-financiamiento:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -6px -5px;
+  background-position: -6px -5px;
   width: 103px;
   height: 126px; }
 
 .icon-patrocinio:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -5px -396px;
+  background-position: -5px -396px;
   width: 147px;
   height: 124px; }
 
 .icon-padrinaje:before {
-  background: url("../images/icons/spritesheet.png") no-repeat -267px -396px;
+  background-position: -267px -396px;
   width: 85px;
   height: 127px; }
+
+.photo-module-container .view-content {
+  display: flex;
+  flex-wrap: wrap; }
+
+.photo-module {
+  width: 35%;
+  margin: 48px auto; }
+
+.photo-module h2 {
+  text-align: center; }
+
+.photo-module img {
+  text-align: center;
+  position: relative;
+  transform: translate(-50%);
+  left: 50%;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  margin-right: 60px; }
+
+.ft-quote {
+  color: #00B1B6;
+  margin: 24px 0;
+  font-size: 25px;
+  line-height: 35px; }
+  @media (min-width: 1200px) {
+    .ft-quote {
+      position: relative;
+      right: 50px; } }
 
 .cta-container {
   color: #000;
@@ -1098,7 +1130,8 @@ input[type=file] {
 
 .logo {
   padding: 10px 0 10px 10px;
-  width: 200px; }
+  width: 200px;
+  margin: 0; }
 
 .dropdown-menu {
   color: #3C475A;
@@ -1205,7 +1238,8 @@ input[type=file] {
   background-color: #F4EDD9; }
 
 .header-img img {
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
 
 .main {
   background-color: #fff;
@@ -1214,7 +1248,25 @@ input[type=file] {
   @media (min-width: 500px) {
     .main {
       padding: 48px 72px 48px;
-      margin-bottom: 60px; } }
+      margin-bottom: 60px;
+      position: relative;
+      width: 90%;
+      left: 10%;
+      top: -75px; } }
+
+@media (min-width: 1200px) {
+  .left-column {
+    display: inline-block;
+    float: left;
+    margin-right: 100px;
+    min-width: 300px;
+    max-width: 500px; } }
+
+.right-column {
+  max-width: 500px; }
+  @media (min-width: 1200px) {
+    .right-column {
+      float: left; } }
 
 .wide-column {
   padding: 48px 0 36px;
@@ -1285,5 +1337,8 @@ input[type=file] {
   overflow: visible;
   position: static;
   width: auto; }
+
+.admin-menu-icon {
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
