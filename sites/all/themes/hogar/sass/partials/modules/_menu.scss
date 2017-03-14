@@ -4,7 +4,8 @@
     width: 190px;
 }
 
-.dropdown-menu, .close-menu {
+.dropdown-menu,
+.close-menu {
     font: 18px $font-family-headings;
     text-decoration: none;
 }
@@ -18,7 +19,7 @@
 .close-menu {
     color: #fff;
     position: fixed;
-    right: -100%;
+    right: 20px;
     top: 30px;
     z-index: 21;
 }
@@ -26,7 +27,7 @@
 .opacity {
     background-color: #000;
     height: 100vh;
-    opacity: 0.3;
+    opacity: .3;
     position: fixed;
     width: 100%;
     z-index: 19;
@@ -38,7 +39,7 @@
     height: 100vh;
     padding-top: 15px;
     position: fixed;
-    right: -100%;
+    right: 0;
     top: 0;
     width: 280px;
     z-index: 20;
@@ -72,6 +73,11 @@
         font-family: $font-family-headings;
         text-decoration: none;
 
+        @include query(900px) {
+            color: $brand-blue;
+            background: none;
+        }
+
         &:focus {
             text-decoration: none;
         }
@@ -92,15 +98,17 @@
             }
         }
 
-        @include query(900px) {
-            color: $brand-blue;
-            background: none;
-        }
+
     }
 }
 
 .menu-item {
     margin-bottom: 20px;
+
+    @include query(900px) {
+        display: inline-block;
+        margin: 0 20px 0 0;
+    }
 
     // Dropdown
     &:hover {
@@ -122,10 +130,7 @@
         }
     }
 
-    @include query(900px) {
-        display: inline-block;
-        margin: 0 20px 0 0;
-    }
+
 
     & > a {
         background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
@@ -151,7 +156,9 @@
     }
 }
 
-.logged-in header, .logged-in .principal-menu, .logged-in .close-menu{
+.logged-in header,
+.logged-in .principal-menu,
+.logged-in .close-menu {
     margin-top: 50px;
 
     @include query(620px) {

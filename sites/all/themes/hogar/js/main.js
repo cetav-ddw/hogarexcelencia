@@ -55,26 +55,9 @@ jQuery(document).ready(function($) {
 
                     toogleClose();
 
-                    // Toogle animation of menu
-
-                    var hideMenu = function hideMenu () {
-                        $mobileMenu.animate({
-                            right: '-100%'
-                        });
-                        $close.animate({
-                            right: '-100%'
-                        });
-                    };
-
                     // Show the menu when you click the word 'menu'
                     $menu.click(function(){
                         $mobileMenu.removeClass('element-hidden');
-                        $mobileMenu.animate({
-                            right: '0'
-                        });
-                        $close.animate({
-                            right: '20px'
-                        });
                         // Adds a opacity                      
                         $opacity.removeClass('element-hidden').addClass('opacity');
                         
@@ -85,17 +68,16 @@ jQuery(document).ready(function($) {
 
                     // When you click "Cerrar" hides the menu, "Cerrar" and the opacity
                     $close.click(function(){
-                        // $mobileMenu.addClass('element-hidden');
+                        $mobileMenu.addClass('element-hidden');
                         $opacity.addClass('element-hidden');
-                        hideMenu();
-                        // toogleClose();
+                        toogleClose();
                     });
 
                     // When you click outside the menu hides the menu and the opacity
                     $opacity.click(function(){
+                        $mobileMenu.addClass('element-hidden');
                         $opacity.addClass('element-hidden');
-                        hideMenu();
-                        // toogleClose();
+                        toogleClose();
                     });
                 },
                 
