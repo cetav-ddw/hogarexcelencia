@@ -25,7 +25,8 @@
       </a>
     <?php endif; ?>
 
-    <a href="#" id="dropdown-menu" class="dropdown-menu">Menu</a>
+    <a href="#" id="dropdown-menu" class="dropdown-menu">Menú</a>
+    <a href="#" id="close-menu" class="close-menu">Cerrar</a>
 
     <?php print render($page['header']); ?>
 
