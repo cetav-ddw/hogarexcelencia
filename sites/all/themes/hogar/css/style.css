@@ -1122,44 +1122,6 @@ input[type=file] {
       .ui-footer-accordion .footer-component-title {
         margin-top: 0; } }
 
-.mobile-nav-link,
-.mobile-nav-close {
-  font: 18px "Baloo Paaji";
-  text-decoration: none; }
-
-.mobile-nav-link {
-  color: #3C475A;
-  float: right;
-  margin: 15px 5px 0 0;
-  border: 2px solid;
-  padding: 5px 10px;
-  border-radius: 4px; }
-  @media only screen and (min-width: 900px) {
-    .mobile-nav-link {
-      display: none; } }
-
-.mobile-nav-close {
-  color: #fff;
-  position: absolute;
-  right: 10px;
-  top: 0;
-  text-transform: uppercase; }
-
-.mobile-main-menu {
-  border-left: 1px solid #8a92a0;
-  display: none;
-  font-size: 18px;
-  bottom: 0;
-  padding-top: 15px;
-  position: absolute;
-  right: -280px;
-  top: 0;
-  width: 280px;
-  z-index: 8; }
-  .mobile-main-menu.is-open {
-    display: block;
-    right: 0; }
-
 .offcanvas-overlay {
   background-color: #000;
   opacity: 0;
@@ -1248,8 +1210,46 @@ input[type=file] {
         display: none;
         margin-top: 4px; } }
 
-.logged-in .header {
-  padding-top: 5em; }
+.mobile-nav-link,
+.mobile-nav-close {
+  font: 18px "Baloo Paaji";
+  text-decoration: none; }
+
+.mobile-nav-link {
+  color: #3C475A;
+  float: right;
+  margin: 15px 5px 0 0;
+  border: 2px solid;
+  padding: 5px 10px;
+  border-radius: 4px; }
+  @media only screen and (min-width: 900px) {
+    .mobile-nav-link {
+      display: none; } }
+
+.mobile-nav-close {
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 900px) {
+    .mobile-nav-close {
+      display: none; } }
+
+.mobile-main-menu {
+  border-left: 1px solid #8a92a0;
+  display: none;
+  font-size: 18px;
+  bottom: 0;
+  padding-top: 15px;
+  position: absolute;
+  right: -280px;
+  top: 0;
+  width: 280px;
+  z-index: 8; }
+  .mobile-main-menu.is-open {
+    display: block;
+    right: 0; }
 
 .webform-component {
   margin-top: 24px; }
@@ -1269,6 +1269,15 @@ input[type=file] {
 
 .header-img img {
   width: 100%; }
+
+.logged-in .header {
+  padding-top: 5em; }
+  @media only screen and (min-width: 450px) {
+    .logged-in .header {
+      padding-top: 3em; } }
+  @media only screen and (min-width: 700px) {
+    .logged-in .header {
+      padding-top: 1em; } }
 
 .main {
   background-color: #fff;
