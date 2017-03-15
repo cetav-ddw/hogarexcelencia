@@ -10,3 +10,15 @@
 .header-img img {
 	width: 100%;
 }
+
+.logged-in .header {
+    padding-top: 5em;
+
+    @include query(450px) {
+        padding-top: 3em;
+    }
+
+    @include query(700px) {
+        padding-top: 1em;
+    }
+}

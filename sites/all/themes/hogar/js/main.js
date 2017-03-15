@@ -16,6 +16,7 @@ jQuery(document).ready(function($) {
         match: function() {
           var $closeMenu = $('#mobile-nav-close');
           var $offcanvasOverlay = $('.js-offcanvas-overlay');
+          var $footerAccordion = $('.js-footer-accordion');
 
           $mainMenu.addClass('mobile-main-menu');
 
@@ -36,7 +37,7 @@ jQuery(document).ready(function($) {
               $offcanvasOverlay.removeClass('is-visible');
           });
 
-          $('.js-footer-accordion').click(function(e) {
+          $footerAccordion.click(function(e) {
               var $itemClicked = $(e.currentTarget);
               $itemClicked.toggleClass('is-open');
           });
@@ -54,6 +55,9 @@ jQuery(document).ready(function($) {
         
         unmatch: function() {
             $('.js-footer-accordion').removeClass('is-open').unbind('click');
+            $mainMenu.removeClass('is-open');
+            $('.js-offcanvas-overlay').removeClass('is-visible');
+            $('#mobile-nav-close').remove();
         },
       })
       .register('screen and (min-width:900px)', {
