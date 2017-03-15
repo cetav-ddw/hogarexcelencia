@@ -1,0 +1,13 @@
+.site-logo {
+    float: left;
+    width: 190px;
+
+    @include query(600px) {
+        max-width: 210px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}

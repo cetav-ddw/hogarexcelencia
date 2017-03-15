@@ -1,130 +1,90 @@
 jQuery(document).ready(function($) {
-    
-    (function(window){
-        // Variables
-        var $mobileMenu = $('#principal-menu');
-        var $menu = $('#dropdown-menu');
-        var $ctaContent = $('.cta-content');
-        var $ctaButton = $('#cta-button');
+  (function(window){
+    var $mainMenu = $('#principal-menu');
+    var $mobileMenuLink = $('.mobile-nav-link');
+    var $ctaContent = $('.js-cta-content-wrap');
+    var $ctaButton = $('#cta-button');
 
-        // Functions
-        var ready = function() {
-            $('body').prepend('<div id="opacity"></div>');
-            $ctaContent.hide();
-        };
+    var ctaAnimation = function () {
+        $ctaButton.click(function() {
+            $ctaContent.toggleClass('is-visible');
+        });
+    };
 
-        var ctaAnimation = function () {
-            // Call to action animations
+    var enquireModule = function() {
+      enquire.register('screen and (min-width:320px) and (max-width:899px)', {
+        match: function() {
+          var $closeMenu = $('#mobile-nav-close');
+          var $offcanvasOverlay = $('.js-offcanvas-overlay');
 
-            $ctaButton.click(function() {
-                $ctaContent.slideToggle( 'slow' );
-                if ($ctaButton.hasClass('fix-padding')) {
-                    $ctaButton.removeClass('fix-padding')
-                } else {$ctaButton.addClass('fix-padding')}
-            });
-        };
+          $mainMenu.addClass('mobile-main-menu');
 
-        var enquireModule = function() {
-            var $opacity = $('#opacity');
-            var $close = $('#close-menu');
-                       
-            // Register when match a viewport of 320px
-            enquire.register('screen and (min-width:320px) and (max-width:899px)', {
-                
-                match: function() {
-                    // Hide menu and show the mobile menu
-                    $mobileMenu.addClass('element-hidden');
-                    $menu.removeClass('element-hidden');
-                    $close.removeClass('element-hidden');
+          if(!$offcanvasOverlay.length) {
+            $offcanvasOverlay = $('<div/>');
+            $offcanvasOverlay.addClass('offcanvas-overlay js-offcanvas-overlay');
+            $('body').prepend($offcanvasOverlay);
+          }
 
+          if(!$closeMenu.length) {
+            $closeMenuComponent = '<a href=\"#\" id=\"mobile-nav-close\" class=\"mobile-nav-close\">Cerrar<\/a>';
+            $mainMenu.prepend($closeMenuComponent);
+            $closeMenu = $('#mobile-nav-close');
+          }
 
-                    //Funtions
-                    $('.js-footer-accordion').click(function(e) {
-                        var $itemClicked = $(e.currentTarget);
-                        $itemClicked.toggleClass('is-open');
-                    });
+          $closeMenu.click(function(){
+              $mainMenu.removeClass('is-open');
+              $offcanvasOverlay.removeClass('is-visible');
+          });
 
-                    // Toogle display of the word "Cerrar" in header
-                    var toogleClose = function toogleClose () {
-                        if ($mobileMenu.hasClass('element-hidden')) {
-                            $close.addClass('element-hidden');
-                        }
-                    };
+          $('.js-footer-accordion').click(function(e) {
+              var $itemClicked = $(e.currentTarget);
+              $itemClicked.toggleClass('is-open');
+          });
 
-                    // Hides the word "Cerrar"
+          $mobileMenuLink.click(function(){
+            $mainMenu.addClass('is-open');                    
+            $offcanvasOverlay.addClass('is-visible');
+          });
 
-                    toogleClose();
+          $offcanvasOverlay.click(function(){
+            $mainMenu.removeClass('is-open');
+            $offcanvasOverlay.removeClass('is-visible');
+          });
+        },
+        
+        unmatch: function() {
+            $('.js-footer-accordion').removeClass('is-open').unbind('click');
+        },
+      })
+      .register('screen and (min-width:900px)', {
+          match: function() {
+              $mainMenu.removeClass('mobile-main-menu');
 
-                    // Show the menu when you click the word 'menu'
-                    $menu.click(function(){
-                        $mobileMenu.removeClass('element-hidden');
-                        // Adds a opacity                      
-                        $opacity.removeClass('element-hidden').addClass('opacity');
-                        
-                        if (!$mobileMenu.hasClass('element-hidden')) {
-                            $close.removeClass('element-hidden');
-                        }
-                    });
+              $ctaButton.mouseenter(function() {
+                  $ctaButton.css('top', '0');
+                  $ctaButton.stop().animate ({
+                      top: '+=10',
+                  }, 200, 'linear')
+              });
 
-                    // When you click "Cerrar" hides the menu, "Cerrar" and the opacity
-                    $close.click(function(){
-                        $mobileMenu.addClass('element-hidden');
-                        $opacity.addClass('element-hidden');
-                        toogleClose();
-                    });
+              $ctaButton.mouseleave(function() {
+                  $ctaButton.stop().animate ({
+                      top: '-=10',
+                  }, 200, 'linear', function() {$ctaButton.css('top', '0');});
+              });
+          },
+          unmatch: function() {
 
-                    // When you click outside the menu hides the menu and the opacity
-                    $opacity.click(function(){
-                        $mobileMenu.addClass('element-hidden');
-                        $opacity.addClass('element-hidden');
-                        toogleClose();
-                    });
-                },
-                
-                unmatch: function() {
-                    $('.js-footer-accordion').removeClass('is-open').unbind('click');
-                },
-            })
+          },    
+      });
+    };
 
-            // Register when match a viewport of 900px
-            .register('screen and (min-width:900px)', {
-                match: function() {
-                    // Show menu when we are not in mobile and hide the mobile menu
-                    $mobileMenu.removeClass('element-hidden');
-                    $menu.addClass('element-hidden');
-                    $close.addClass('element-hidden');
-                    $opacity.addClass('element-hidden');
+    window.app = {
+        cta: ctaAnimation,
+        enquire: enquireModule
+    };
+  }(window));
 
-                    // Hover animations
-                    $ctaButton.mouseenter(function() {
-                        $ctaButton.css('top', '0');
-                        $ctaButton.stop().animate ({
-                            top: '+=10',
-                        }, 200, 'linear')
-                    });
-
-                    $ctaButton.mouseleave(function() {
-                        $ctaButton.stop().animate ({
-                            top: '-=10',
-                        }, 200, 'linear', function() {$ctaButton.css('top', '0');});
-                    });
-                },
-                unmatch: function() {
-
-                },    
-            });
-        };
-
-        window.app = {
-            ready: ready,
-            cta: ctaAnimation,
-            enquire: enquireModule
-        };
-
-    }(window));
-    
-    app.ready();
-    app.cta();
-    app.enquire();
-
+  app.cta();
+  app.enquire();
 });

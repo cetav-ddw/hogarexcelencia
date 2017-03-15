@@ -1,48 +1,65 @@
-.logo {
-    margin-left: 10px;
-    padding: 10px 0 10px 10px;
-    width: 190px;
-}
-
-.dropdown-menu,
-.close-menu {
+.mobile-nav-link,
+.mobile-nav-close {
     font: 18px $font-family-headings;
     text-decoration: none;
 }
 
-.dropdown-menu {
+.mobile-nav-link {
     color: $brand-blue;
     float: right;
-    margin: 30px 25px 0 0;
+    margin: 15px 5px 0 0;
+    border: 2px solid;
+    padding: 5px 10px;
+    border-radius: 4px;
+
+    @include query(900px) {
+        display: none;
+    }
 }
 
-.close-menu {
+.mobile-nav-close {
     color: #fff;
-    position: fixed;
-    right: 20px;
-    top: 30px;
-    z-index: 21;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    text-transform: uppercase;
 }
 
-.opacity {
+.mobile-main-menu {
+    border-left: 1px solid #8a92a0;
+    display: none;
+    font-size: 18px;
+    bottom: 0;
+    padding-top: 15px;
+    position: absolute;
+    right: -280px;
+    top: 0;
+    width: 280px;
+    z-index: 8;
+
+    &.is-open {
+        display: block;
+        right: 0;
+    }
+}
+
+.offcanvas-overlay {
     background-color: #000;
-    height: 100vh;
-    opacity: .3;
-    position: fixed;
+    opacity: 0;
+    display: none;
+    height: 100%;
+    position: absolute;
     width: 100%;
-    z-index: 19;
+    z-index: 7;
+
+    &.is-visible {
+        display: block;
+        opacity: .5;
+    }
 }
 
 .principal-menu {
     background-color: $brand-blue;
-    font-size: 18px;
-    height: 100vh;
-    padding-top: 15px;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 280px;
-    z-index: 20;
 
     @include query(900px) {
         background-color: transparent;
@@ -67,10 +84,11 @@
         list-style: none;
         padding: 0 0 5px 0;
     }
-
     a {
         color: #fff;
+        display: block;
         font-family: $font-family-headings;
+        padding: .5em;
         text-decoration: none;
 
         @include query(900px) {
@@ -97,8 +115,6 @@
                 background: none;
             }
         }
-
-
     }
 }
 
@@ -110,9 +126,7 @@
         margin: 0 20px 0 0;
     }
 
-    // Dropdown
     &:hover {
-
         @include query(900px) {
             position: relative;
         }
@@ -129,8 +143,6 @@
             }
         }
     }
-
-
 
     & > a {
         background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
@@ -156,22 +168,6 @@
     }
 }
 
-.logged-in header,
-.logged-in .principal-menu,
-.logged-in .close-menu {
-    margin-top: 50px;
-
-    @include query(620px) {
-        margin-top: 30px;
-    }
-
-    @include query(900px) {
-        margin-top: 0;
-    }
-}
-
-.logged-in header {
-    @include query(900px) {
-        margin-top: 30px;
-    }
+.logged-in .header {
+    padding-top: 5em;
 }
