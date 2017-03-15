@@ -1,98 +1,94 @@
 jQuery(document).ready(function($) {
-  // ToDo: usar un patron, ordenar los componentes y el enquire
-  $('body').prepend('<div id="opacity"></div>');
-  var $mobileMenu = $('#principal-menu'); //Menu
-  // Call to action animations
-  var $ctaContent = $('.cta-content');
-  $ctaContent.hide();
-  var $ctaButton = $('#cta-button');
+  (function(window){
+    var $mainMenu = $('#principal-menu');
+    var $mobileMenuLink = $('.mobile-nav-link');
+    var $ctaContent = $('.js-cta-content-wrap');
+    var $ctaButton = $('#cta-button');
 
-  $ctaButton.click(function() {
-    $ctaContent.slideToggle( 'slow' );
-    if ($ctaButton.hasClass('fix-padding')) {
-      $ctaButton.removeClass('fix-padding')
-    } else {$ctaButton.addClass('fix-padding')}
-  });
+    var ctaAnimation = function () {
+        $ctaButton.click(function() {
+            $ctaContent.toggleClass('is-visible');
+        });
+    };
 
-  // Register when match a viewport of 320px
-  enquire.register('screen and (min-width:320px) and (max-width:899px)', {
-    match: function() {
-      $('.js-footer-accordion').click(function(e) {
-        var $itemClicked = $(e.currentTarget);
-        $itemClicked.toggleClass('is-open');
+    var enquireModule = function() {
+      enquire.register('screen and (min-width:320px) and (max-width:899px)', {
+        match: function() {
+          var $closeMenu = $('#mobile-nav-close');
+          var $offcanvasOverlay = $('.js-offcanvas-overlay');
+          var $footerAccordion = $('.js-footer-accordion');
+
+          $mainMenu.addClass('mobile-main-menu');
+
+          if(!$offcanvasOverlay.length) {
+            $offcanvasOverlay = $('<div/>');
+            $offcanvasOverlay.addClass('offcanvas-overlay js-offcanvas-overlay');
+            $('body').prepend($offcanvasOverlay);
+          }
+
+          if(!$closeMenu.length) {
+            $closeMenuComponent = '<a href=\"#\" id=\"mobile-nav-close\" class=\"mobile-nav-close\">Cerrar<\/a>';
+            $mainMenu.prepend($closeMenuComponent);
+            $closeMenu = $('#mobile-nav-close');
+          }
+
+          $closeMenu.click(function(){
+              $mainMenu.removeClass('is-open');
+              $offcanvasOverlay.removeClass('is-visible');
+          });
+
+          $footerAccordion.click(function(e) {
+              var $itemClicked = $(e.currentTarget);
+              $itemClicked.toggleClass('is-open');
+          });
+
+          $mobileMenuLink.click(function(){
+            $mainMenu.addClass('is-open');                    
+            $offcanvasOverlay.addClass('is-visible');
+          });
+
+          $offcanvasOverlay.click(function(){
+            $mainMenu.removeClass('is-open');
+            $offcanvasOverlay.removeClass('is-visible');
+          });
+        },
+        
+        unmatch: function() {
+            $('.js-footer-accordion').removeClass('is-open').unbind('click');
+            $mainMenu.removeClass('is-open');
+            $('.js-offcanvas-overlay').removeClass('is-visible');
+            $('#mobile-nav-close').remove();
+        },
+      })
+      .register('screen and (min-width:900px)', {
+          match: function() {
+              $mainMenu.removeClass('mobile-main-menu');
+
+              $ctaButton.mouseenter(function() {
+                  $ctaButton.css('top', '0');
+                  $ctaButton.stop().animate ({
+                      top: '+=10',
+                  }, 200, 'linear')
+              });
+
+              $ctaButton.mouseleave(function() {
+                  $ctaButton.stop().animate ({
+                      top: '-=10',
+                  }, 200, 'linear', function() {$ctaButton.css('top', '0');});
+              });
+          },
+          unmatch: function() {
+
+          },    
       });
+    };
 
-      // Hide menu and show the mobile menu
-      $mobileMenu.addClass('element-hidden');
-      $('#dropdown-menu').removeClass('element-hidden');
-      $('#icon-menu').removeClass('element-hidden');
+    window.app = {
+        cta: ctaAnimation,
+        enquire: enquireModule
+    };
+  }(window));
 
-      // Show the menu when you click the word 'menu'
-      $('#dropdown-menu').click(function(){
-        $mobileMenu.removeClass('element-hidden');
-        // Adds a opacity
-        $('#opacity').removeClass('element-hidden').addClass('opacity');
-      });
-
-      // When you click the 'X' hides the menu and the opacity
-      $('#icon-menu').click(function(){
-        $mobileMenu.addClass('element-hidden');
-        $('.opacity').addClass('element-hidden');
-      });
-
-      // When you click outside the menu hides the menu and the opacity
-      // ToDo: le estan haciendo click a document, se ejecuta siempre
-      // si ponen un breakpoint en el devtools lo van a ver
-      $(document).click(function(){
-        $mobileMenu.addClass('element-hidden');
-        $('.opacity').addClass('element-hidden');
-      });
-      $mobileMenu.click(function(e){
-        e.stopPropagation();
-      });
-      $('#dropdown-menu').click(function(e){
-        e.stopPropagation();
-      });
-    },      
-    unmatch: function() {
-      $('.js-footer-accordion').removeClass('is-open').unbind('click');
-    },    
-  })
-
-  // Register when match a viewport of 900px
-  .register('screen and (min-width:900px)', {
-    match: function() {
-      // Show menu when we are not in mobile and hide the mobile menu
-      $mobileMenu.removeClass('element-hidden');
-      $('#dropdown-menu').addClass('element-hidden');
-      $('#icon-menu').addClass('element-hidden');
-
-      // Remove the event of the document
-      // ToDo: aqui esta removiendo la clase, no el evento, el evento sigue vivo
-      // hay que hacer un .unbind('click'), ojo linea 58
-
-      // ToDo: le estan haciendo click a document, se ejecuta siempre
-      // si ponen un breakpoint en el devtools lo van a ver
-      $(document).click(function(){
-        $mobileMenu.removeClass('element-hidden');
-      });
-
-      // Hover animations
-      $ctaButton.mouseenter(function() {
-        $ctaButton.css('top', '0');
-        $ctaButton.stop().animate ({
-            top: '+=10',
-        }, 200, 'linear')
-      });
-
-      $ctaButton.mouseleave(function() {
-        $ctaButton.stop().animate ({
-            top: '-=10',
-        }, 200, 'linear', function() {$ctaButton.css('top', '0');});
-      });
-    },
-    unmatch: function() {
-  
-    },    
-  });
+  app.cta();
+  app.enquire();
 });

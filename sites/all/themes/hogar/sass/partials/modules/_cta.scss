@@ -23,9 +23,22 @@
 
 //Content
 .cta-wrapper {
+	overflow: hidden;
 	width: 90%;
 	max-width: 1000px;
 	margin: 0 auto;
+}
+
+.cta-content-wrap {
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: height .5s ease-in 1s;
+
+	&.is-visible {
+		height: auto;
+		opacity: 1;
+	}
 }
 
 // Title

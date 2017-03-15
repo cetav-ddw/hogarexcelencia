@@ -28,7 +28,6 @@
     p {
         color: #fff;
     }
-
     li {
         margin: 10px 0;
         padding-left: 32px;
@@ -50,7 +49,15 @@
 
     @include query(700px) {
         width: 50%;
+    }
 
+    .icon-facebook {
+        &:before {
+            display: none;
+        }
+    }
+
+    @include query(700px) {
         &:before {
             content: "";
             width: 2px;
@@ -67,6 +74,10 @@
         .icon-facebook {
             position: relative;
             padding-right: 60px;
+
+            &:before {
+                display: block;
+            }
         }
     }
 }

@@ -20,12 +20,12 @@
     <?php endif; ?>
 
     <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo"/>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo" id="logo">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo-img"/>
       </a>
     <?php endif; ?>
 
-    <a href="#" id="dropdown-menu" class="dropdown-menu">Menu</a>
+    <a href="#" id="mobile-nav-link" class="mobile-nav-link">Menú</a>
 
     <?php print render($page['header']); ?>
 
@@ -62,8 +62,12 @@
 
 <?php if ($page['cta']): ?>
     <div class="cta-container">
-        <div class="cta-wrapper clearfix">
+        <div class="cta-wrapper">
             <?php print render($page['cta']); ?>
+            
+            <div class="cta-content-wrap js-cta-content-wrap">
+                <?php print render($page['cta_content']); ?>
+            </div>
         </div>
     </div>
 <?php endif; ?>

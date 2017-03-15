@@ -26,6 +26,7 @@ regions[above_content]      = Above Content
 regions[content] 			= Content
 regions[below_content]      = Below Content
 regions[cta]    			= Call to action
+regions[cta_content]        = CTA Content
 
 regions[footer_top]         = Footer Top
 regions[footer_bottom]      = Footer Bottom
