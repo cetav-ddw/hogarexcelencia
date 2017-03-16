@@ -60,7 +60,7 @@
 }
 
 
-@media (min-width: 600px) {
+@include query(600px) {
 	.cta-arrows:before, 
 	.cta-arrows:after {
 		display: inline-block;
@@ -78,16 +78,16 @@
 .cta-content {
 	padding-bottom: 72px;
 
-	@media (min-width: 600px) {
+	@include query(600px) {
 		max-width: 400px;
 		margin: 0 auto;
 	}
 
-	@media (min-width: 950px) {
+	@include query(950px) {
 		padding-bottom: 96px;	
 	}
 
-	@media (min-width: 1200px) {
+	@include query(1200px) {
 		vertical-align: top;
 		width: 45%;
 		margin: 0 30px;
@@ -104,7 +104,7 @@
 	color: #000;
 	text-align: center;
 
-	@media (min-width: 550px) {
+	@include query(550px) {
 		font-size: 30px;
 	}
 }
@@ -118,7 +118,7 @@
 	margin-top: 30px;
 }
 
-@media (min-width: 950px) {
+@include query(950px) {
 	.float-left {
 	    float: left;
 	}

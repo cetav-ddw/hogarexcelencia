@@ -1,44 +1,58 @@
 .main {
 	background-color: #fff;
-	padding: 36px;
+	padding: 36px 36px 24px;
 	margin-bottom: 48px;
 	
-	@media (min-width: 500px) {
-		padding: 48px 72px 48px;
+	@include query(500px) {
+		padding: 60px 72px 0;
 		margin-bottom: 60px;
 		position: relative;
 		width: 90%;
 		left: 10%;
-		top: -75px;
+		margin-top: -100px;
+	}
+
+	@include query(1200px) {
+		overflow: hidden;	
 	}
 }
 
 .left-column {
-	@media (min-width: 1200px) {	
+	@include query(1200px) {
 		display: inline-block;
 		float: left;
-		margin-right: 100px;
+		margin-right: 150px;
 		min-width: 300px;
-		max-width: 500px;
+		max-width: 400px;
 	}
 }
 
 .right-column {
-	max-width: 500px;
+	max-width: 650px;
+	padding-bottom: 48px;
 
-	@media (min-width: 1200px) {
+	@include query(1200px) {
 		float: left;
 	}
 }
 
 .wide-column {
-	padding: 48px 0 36px;
+	padding: 36px 0;
 	display: flex;
 	flex-wrap: wrap;
 	
-	@media (min-width: 500px) {
-		padding: 48px 0;
+	@include query(500px) {
+		padding-bottom: 48px;
 	}
+
+	@include query(1200px) {
+		width: 100%;
+	}
+}
+
+.last-column {
+	width: 100%;
+	padding-bottom: 72px;
 }
 
 .below-content {
@@ -48,14 +62,10 @@
 	max-width: 1200px;
 }
 
-@media (min-width: 1200px) {
+@include query(1200px) {
 	.content-1col {
 		width: 60%;
 		max-width: 800px;
 		margin: 0 auto;
 	}
-}
-
-.content-2col {
-	
 }

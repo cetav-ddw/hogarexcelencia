@@ -2,8 +2,6 @@
 @import "partials/mixins";
 @import "partials/drupal/system";
 
-@import "partials/third-party/typebase";
-
 @import "partials/elements/base";
 @import "partials/elements/links";
 @import "partials/elements/type";
@@ -27,4 +25,5 @@
 @import "partials/layout/main";
 @import "partials/layout/footer";
 
+@import "partials/third-party/typebase";
 @import "partials/utilitary/misc";
