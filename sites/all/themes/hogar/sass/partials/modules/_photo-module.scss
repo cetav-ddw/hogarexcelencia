@@ -1,0 +1,24 @@
+.photo-module-container {
+	margin: 0 auto;
+}
+
+.photo-module {
+	margin-bottom: 60px;
+}
+
+.photo-module h2 {
+	margin-top: 0;
+}
+
+.photo-module img {
+	border-bottom-right-radius: 100px;
+	border-top-left-radius: 100px;
+	margin-right: 60px;
+	float: left;
+}
+
+.photo-module-content {
+	width: 60%;
+	max-width: 650px;
+	float: left;
+}

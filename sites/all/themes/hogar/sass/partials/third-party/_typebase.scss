@@ -11,19 +11,18 @@ $scale: 1.2;
 
 html {
     font-family: $font-family-base;
-    font-size: $baseFontSize / 16 * 90%;
+    font-size: $baseFontSize / 15 * 90%;
     // Make everything look a little nicer in webkit
     -webkit-font-smoothing: antialiased;
 
     @include query(1100px) {
-        font-size: 100%;
+        font-size: $baseFontSize / 13 * 100%;
     }
 }
 
 p {
     line-height: $leading;
-    margin-top: $leading;
-    margin-bottom: 0;
+    margin: $leading 0;
 }
 
 ul,
@@ -37,7 +36,7 @@ ol {
     ul,
     ol {
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: $leading;
     }
 }
 
@@ -56,16 +55,15 @@ h6 {
     font-family: $font-family-headings;
     margin: 0;
     line-height: $leading;
-    margin-top: $leading;
+    margin-bottom: $leading;
 }
 
 h1 {
     line-height: 2 * $leading;
-    margin-top: 2 * $leading;
     font-size: 2 * $scale-s * 1rem;
     
-    @media (min-width: 550px) {
-        font-size: 3 * $scale * 1rem;
+    @include query(550px) {
+        font-size: 2 * $scale * 1rem;
         line-height: 3 * $leading;
     }
 }
@@ -73,9 +71,10 @@ h1 {
 h2 {
     line-height: 2 * $leading;
     font-size: 1.5 * $scale * 1rem;
+    margin-top: $leading;
     
-    @media (min-width: 550px) {
-        font-size: 2 * $scale * 1rem;
+    @include query(550px) {
+        font-size: 1.5 * $scale * 1rem;
     }
 }
 

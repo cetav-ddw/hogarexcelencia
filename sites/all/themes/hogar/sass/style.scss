@@ -2,8 +2,6 @@
 @import "partials/mixins";
 @import "partials/drupal/system";
 
-@import "partials/third-party/typebase";
-
 @import "partials/elements/base";
 @import "partials/elements/links";
 @import "partials/elements/type";
@@ -16,6 +14,8 @@
 
 @import "partials/modules/brand";
 @import "partials/modules/icon-module";
+@import "partials/modules/photo-module";
+@import "partials/modules/ft-quote";
 @import "partials/modules/cta";
 @import "partials/modules/footer-components";
 @import "partials/modules/menu";
@@ -25,4 +25,5 @@
 @import "partials/layout/main";
 @import "partials/layout/footer";
 
+@import "partials/third-party/typebase";
 @import "partials/utilitary/misc";
