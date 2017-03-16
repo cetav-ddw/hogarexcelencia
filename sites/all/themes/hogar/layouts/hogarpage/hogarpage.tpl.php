@@ -24,8 +24,6 @@
 
     <div class="main">
 
-      <div class="clearfix">
-
         <?php if ($content['left']): ?>
             <div class="left-column">
               <?php print $content['left']; ?>
@@ -37,8 +35,6 @@
               <?php print $content['right']; ?>
             </div>
         <?php endif; ?>
-
-      </div>
 
       <?php if ($content['wide']): ?> 
           <div class="wide-column clearfix">
