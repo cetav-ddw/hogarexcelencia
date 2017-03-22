@@ -3,11 +3,8 @@
 }
 
 .photo-module {
+	width: 100%;
 	margin-bottom: 60px;
-}
-
-.photo-module h2 {
-	margin-top: 0;
 }
 
 .photo-module img {
@@ -18,7 +15,23 @@
 }
 
 .photo-module-content {
-	width: 60%;
-	max-width: 650px;
-	float: left;
+	max-width: 550px;
+}
+
+
+@include query(1300px) {
+	.photo-module h2 {
+		display: inline-block;
+		margin-top: 0;
+	}
+
+	.photo-module-content {
+		width: 60%;
+		max-width: 650px;
+		float: left;
+	}
+
+	.photo-module.standalone ul {
+		margin-top: 0;
+	}
 }
