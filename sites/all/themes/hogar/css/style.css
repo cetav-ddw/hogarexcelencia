@@ -847,10 +847,8 @@ input[type=file] {
   margin: 0 auto; }
 
 .photo-module {
+  width: 100%;
   margin-bottom: 60px; }
-
-.photo-module h2 {
-  margin-top: 0; }
 
 .photo-module img {
   border-bottom-right-radius: 100px;
@@ -859,10 +857,20 @@ input[type=file] {
   float: left; }
 
 .photo-module-content {
-  width: 60%;
-  max-width: 650px;
-  float: left; }
+  max-width: 550px; }
 
+@media only screen and (min-width: 1300px) {
+  .photo-module h2 {
+    display: inline-block;
+    margin-top: 0; }
+
+  .photo-module-content {
+    width: 60%;
+    max-width: 650px;
+    float: left; }
+
+  .photo-module.standalone ul {
+    margin-top: 0; } }
 .ft-quote {
   color: #00B1B6;
   margin: 24px 0;
@@ -916,6 +924,7 @@ input[type=file] {
   cursor: pointer; }
 
 .cta-title p {
+  margin-top: 0;
   font-weight: bold;
   font-size: 18px; }
 
@@ -1228,9 +1237,10 @@ input[type=file] {
       padding-top: 1em; } }
 
 .main {
-  background-color: #fff;
   padding: 36px 36px 24px;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  background: top center no-repeat url("../images/textures/bg-texture-difuse.jpg"), bottom no-repeat url("../images/textures/bg-texture-down.jpg");
+  background-color: #fff; }
   @media only screen and (min-width: 500px) {
     .main {
       padding: 60px 72px 0;
