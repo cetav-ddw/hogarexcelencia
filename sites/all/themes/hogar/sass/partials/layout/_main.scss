@@ -1,7 +1,9 @@
 .main {
-	background-color: #fff;
 	padding: 36px 36px 24px;
 	margin-bottom: 48px;
+	background: top center no-repeat url("../images/textures/bg-texture-difuse.jpg"),
+				bottom no-repeat url("../images/textures/bg-texture-down.jpg");
+	background-color: #fff;
 	
 	@include query(500px) {
 		padding: 60px 72px 0;
