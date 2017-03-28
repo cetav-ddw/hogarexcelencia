@@ -725,6 +725,13 @@ input[type=file] {
   width: 190px; }
   @media only screen and (min-width: 600px) {
     .site-logo {
+      margin-top: 10px;
+      max-width: 210px; } }
+  @media only screen and (min-width: 900px) {
+    .site-logo {
+      max-width: 150px; } }
+  @media only screen and (min-width: 1100px) {
+    .site-logo {
       max-width: 210px; } }
   .site-logo img {
     display: block;
@@ -1102,16 +1109,17 @@ input[type=file] {
       height: auto;
       padding: 0;
       position: static;
-      width: auto; } }
+      width: 80%; } }
   .principal-menu > .menu {
     margin-top: 50px; }
     @media only screen and (min-width: 900px) {
       .principal-menu > .menu {
-        padding-left: 0px;
-        margin: 30px 0 0; } }
-  .principal-menu li {
-    list-style: none;
-    padding: 0 0 5px 0; }
+        display: table;
+        padding-left: 0;
+        margin: 0;
+        table-layout: fixed;
+        width: 100%;
+        max-width: 1100px; } }
   .principal-menu a {
     color: #fff;
     display: block;
@@ -1126,47 +1134,68 @@ input[type=file] {
       text-decoration: none; }
     .principal-menu a:hover {
       text-decoration: none; }
-      @media only screen and (min-width: 900px) {
-        .principal-menu a:hover {
-          background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent; } }
-    .principal-menu a:active {
-      background: bottom left no-repeat url(../images/textures/form-line-white.png) transparent; }
-      @media only screen and (min-width: 900px) {
-        .principal-menu a:active {
-          background: none; } }
 
 .menu-item {
-  margin-bottom: 20px; }
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0;
+  position: relative; }
   @media only screen and (min-width: 900px) {
     .menu-item {
-      display: inline-block;
-      margin: 0 20px 0 0; } }
-  @media only screen and (min-width: 900px) {
-    .menu-item:hover {
-      position: relative; } }
-  @media only screen and (min-width: 900px) {
-    .menu-item:hover > ul {
-      background-color: #F4EDD9;
-      display: block;
-      padding: 20px 0 0 0;
-      position: absolute;
-      left: -45px;
+      display: table-cell;
+      font-size: 14px;
       text-align: center;
-      width: 160px; } }
-  .menu-item > a {
-    background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent; }
-    @media only screen and (min-width: 900px) {
-      .menu-item > a {
-        background: none; } }
-    @media only screen and (min-width: 900px) {
-      .menu-item > a:hover {
-        background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent; } }
-  .menu-item > .menu {
-    margin-top: 10px; }
-    @media only screen and (min-width: 900px) {
-      .menu-item > .menu {
-        display: none;
-        margin-top: 4px; } }
+      margin: 0; }
+      .menu-item > a:link {
+        border-top: 6px solid transparent;
+        display: block;
+        padding: 35px 0 5px;
+        white-space: nowrap; }
+      .menu-item a:hover, .menu-item.active-trail .active {
+        border-top-color: #00B1B6; } }
+  @media only screen and (min-width: 1100px) {
+    .menu-item {
+      font-size: 16px; } }
+  @media only screen and (min-width: 1200px) {
+    .menu-item {
+      font-size: 18px; } }
+  @media only screen and (min-width: 1400px) {
+    .menu-item {
+      font-size: 20px; } }
+  .menu-item li {
+    padding: 0; }
+
+.expanded .menu {
+  margin-bottom: 0;
+  margin-left: 30px;
+  padding: 0; }
+  @media only screen and (min-width: 900px) {
+    .expanded .menu {
+      display: none;
+      left: -35%;
+      margin-left: 0;
+      position: absolute;
+      background: #e8e2cf;
+      width: 236px; } }
+  @media only screen and (min-width: 1200px) {
+    .expanded .menu {
+      left: -6%; } }
+@media only screen and (min-width: 900px) {
+  .expanded li {
+    border-bottom: 1px solid #c7c4bb;
+    border-top: 1px solid #e8e3d3;
+    list-style: none; }
+    .expanded li:first-child {
+      border-top: 0; }
+    .expanded li:last-child {
+      border-bottom: 0; }
+    .expanded li a {
+      background: #dbd5c3; }
+    .expanded li a:hover {
+      background: #e8e4d7; } }
+
+.expanded:hover .menu {
+  display: block; }
 
 .mobile-nav-link,
 .mobile-nav-close {
@@ -1266,9 +1295,17 @@ input[type=file] {
 .header {
   background-color: #F4EDD9;
   padding: 1em; }
+  .header:before, .header:after {
+    content: " ";
+    display: table; }
+  .header:after, .header:after {
+    clear: both; }
   @media only screen and (min-width: 900px) {
     .header {
-      padding: 1em 2em; } }
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+      position: relative;
+      z-index: 10;
+      padding: 0 2em 1em; } }
 
 .header-img img {
   width: 100%;
@@ -1341,15 +1378,19 @@ input[type=file] {
     width: 60%;
     max-width: 800px;
     margin: 0 auto; } }
+.bg-pattern {
+  background-image: url("../images/textures/p6.png");
+  background-repeat: repeat; }
+
 .footer {
-  background: #11767b url("../images/textures/p6.png") repeat;
+  background-color: #11767b;
   overflow: hidden; }
 
 .footer-bottom {
   overflow: hidden; }
 
 .footer-top {
-  background: #00B1B6 url("../images/textures/p6.png") repeat;
+  background-color: #00B1B6;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   padding: 0 .75em; }
