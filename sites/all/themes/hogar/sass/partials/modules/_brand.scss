@@ -3,6 +3,15 @@
     width: 190px;
 
     @include query(600px) {
+        margin-top: 10px;
+        max-width: 210px;
+    }
+
+    @include query(900px) {
+        max-width: 150px;
+    }
+
+    @include query(1100px) {
         max-width: 210px;
     }
 

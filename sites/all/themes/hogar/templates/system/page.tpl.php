@@ -9,7 +9,7 @@
  *
  */
 ?>
-<header class="header clearfix" role="banner">
+<header class="header bg-pattern" role="banner">
     <?php if ($messages): ?>
         <div class="messages-wrapper">
             <div class="messages-content">
@@ -72,9 +72,9 @@
     </div>
 <?php endif; ?>
 
-<footer class="footer" role="contentinfo">
+<footer class="footer bg-pattern" role="contentinfo">
     <?php if ($page['footer_top']): ?>
-        <div class="footer-top">
+        <div class="footer-top bg-pattern">
             <div class="l-footer">
                 <?php print render($page['footer_top']); ?>
             </div>
