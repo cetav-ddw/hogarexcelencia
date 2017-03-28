@@ -10,15 +10,6 @@
  */
 ?>
 <header class="header bg-pattern" role="banner">
-    <?php if ($messages): ?>
-        <div class="messages-wrapper">
-            <div class="messages-content">
-                <?php print $messages; ?>
-            </div>
-            <a href="#" id="messages-toggle"><?php print t('Close');?></a>
-        </div>
-    <?php endif; ?>
-
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo" id="logo">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo-img"/>
@@ -38,6 +29,15 @@
 <div class="main-content">
     <a id="main-content"></a>
 
+    <?php if ($messages): ?>
+        <div class="messages-wrapper">
+            <div class="messages-content">
+                <?php print $messages; ?>
+            </div>
+            <a href="#" id="messages-toggle" class="messages-toggle"><?php print t('X');?></a>
+        </div>
+    <?php endif; ?>
+
     <?php if ($tabs): ?>
         <?php print render($tabs); ?>
     <?php endif; ?>
@@ -51,7 +51,6 @@
     <?php if ($page['content']): ?>
         <?php print render($page['content']); ?>
     <?php endif; ?>
-
 </div>
 
 <?php if ($page['below_content']): ?>

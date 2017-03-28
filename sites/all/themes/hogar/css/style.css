@@ -172,6 +172,23 @@ html.js .js-hide {
 *:first-child + html .clearfix {
   min-height: 1%; }
 
+.tabs.primary {
+  margin: 15px 20px 0;
+  padding: 0; }
+  .tabs.primary a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px 0;
+    border-bottom: 4px solid; }
+  .tabs.primary a:hover {
+    color: #efa756; }
+  .tabs.primary li {
+    display: inline-block;
+    font-weight: bold;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
 #autocomplete li.selected {
   background: #0072b9;
   color: #fff; }
@@ -200,6 +217,19 @@ html.js fieldset.collapsed .fieldset-legend {
 
 .progress .filled {
   background: #0072b9 url(../images/system-images/progress.gif); }
+
+.messages-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative; }
+
+.messages-toggle {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit; }
 
 .messages {
   background-position: 8px 8px;
