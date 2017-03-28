@@ -11,15 +11,17 @@
 	border-bottom-right-radius: 100px;
 	border-top-left-radius: 100px;
 	margin-right: 60px;
-	float: left;
 }
 
 .photo-module-content {
 	max-width: 550px;
 }
 
-
 @include query(1300px) {
+	.photo-module img {
+		float: left;
+	}
+
 	.photo-module h2 {
 		display: inline-block;
 		margin-top: 0;

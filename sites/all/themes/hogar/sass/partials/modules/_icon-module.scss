@@ -19,9 +19,7 @@
 }
 
 .icon-module:before {
-    display: block;
     margin: 0 auto 24px;
-    content: "";
 }
 
 .s-icon {
@@ -30,6 +28,8 @@
 
 // Icon classes
 .sprite:before {
+    display: block;
+    content: "";
     background-image: url('../images/icons/spritesheet.png');
     background-repeat: no-repeat;
 }
