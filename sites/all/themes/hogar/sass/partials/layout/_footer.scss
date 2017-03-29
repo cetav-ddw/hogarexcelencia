@@ -5,6 +5,7 @@
 
 .footer {
 	background-color: #11767b;
+    border-top: 8px solid #048e92;
     overflow: hidden;
 }
 
@@ -21,7 +22,6 @@
 
 .l-footer {
     overflow: hidden;
-
     padding: 2.5em .75em;
 
     @include query(700px) {
