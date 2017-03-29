@@ -1,5 +1,10 @@
+.bg-pattern {
+    background-image: url("../images/textures/p6.png");
+    background-repeat: repeat;
+}
+
 .footer {
-	background: #11767b url("../images/textures/p6.png") repeat;
+	background-color: #11767b;
     overflow: hidden;
 }
 
@@ -8,7 +13,7 @@
 }
 
 .footer-top {
-    background: $brand-turquoise url("../images/textures/p6.png") repeat;
+    background-color: $brand-turquoise;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .5);
     overflow: hidden;
     padding: 0 .75em;

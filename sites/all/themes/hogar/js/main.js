@@ -11,6 +11,10 @@ jQuery(document).ready(function($) {
         });
     };
 
+    $('body').on('click', '#messages-toggle', function() {
+      $('.messages-wrapper').remove();
+    });
+
     var enquireModule = function() {
       enquire.register('screen and (min-width:320px) and (max-width:899px)', {
         match: function() {

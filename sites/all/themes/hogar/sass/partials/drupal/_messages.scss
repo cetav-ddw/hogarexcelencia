@@ -1,3 +1,18 @@
+.messages-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.messages-toggle {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
 // ====================
 // system.messages.css
 // ====================

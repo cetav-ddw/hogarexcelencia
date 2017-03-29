@@ -23,21 +23,20 @@
         height: auto;
         padding: 0;
         position: static;
-        width: auto;
+        width: 80%;
     }
 
     & > .menu {
         margin-top: 50px;
 
         @include query(900px) {
-            padding-left: 0px;
-            margin: 30px 0 0;
+            display: table;
+            padding-left: 0;
+            margin: 0;
+            table-layout: fixed;
+            width: 100%;
+            max-width: 1100px;
         }
-    }
-
-    li {
-        list-style: none;
-        padding: 0 0 5px 0;
     }
     a {
         color: #fff;
@@ -54,72 +53,97 @@
         &:focus {
             text-decoration: none;
         }
-
         &:hover {
             text-decoration: none;
-
-            @include query(900px) {
-                background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
-            }
-        }
-
-        &:active {
-            background: bottom left no-repeat url(../images/textures/form-line-white.png) transparent;
-
-            @include query(900px) {
-                background: none;
-            }
         }
     }
 }
 
 .menu-item {
+    list-style: none;
     margin-bottom: 20px;
+    padding: 0;
+    position: relative;
 
     @include query(900px) {
-        display: inline-block;
-        margin: 0 20px 0 0;
-    }
+        display: table-cell;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
 
-    &:hover {
-        @include query(900px) {
-            position: relative;
+        > a:link {
+            border-top: 6px solid transparent;
+            display: block;
+            padding: 35px 0 5px;
+            white-space: nowrap;
         }
-
-        & > ul{
-            @include query(900px) {
-                background-color: $theme-cream;
-                display: block;
-                padding: 20px 0 0 0;
-                position: absolute;
-                left: -45px;
-                text-align: center;
-                width: 160px;
-            }
+        a:hover,
+        &.active-trail .active {
+            border-top-color: $brand-turquoise;
         }
     }
 
-    & > a {
-        background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
-        
-        @include query(900px) {
-            background: none;
-        }
-
-        &:hover {
-            @include query(900px) {
-                background: bottom left no-repeat url(../images/textures/form-line-turq.png) transparent;
-            }
-        }
+    @include query(1100px) {
+        font-size: 16px;
     }
 
-    & > .menu {
-        margin-top: 10px;
-                      
+    @include query(1200px) {
+        font-size: 18px;
+    }
+
+    @include query(1400px) {
+        font-size: 20px;
+    }
+
+    li {
+        padding: 0;
+    }
+}
+
+.expanded {
+    .menu {
+        margin-bottom: 0;
+        margin-left: 30px;
+        padding: 0;
+
         @include query(900px) {
             display: none;
-            margin-top: 4px;
+            left: -35%;
+            margin-left: 0;
+            position: absolute;
+            background: #e8e2cf;
+            width: 236px;
         }
+
+        @include query(1200px) {
+            left: -6%;
+        }
+    }
+    li {
+        @include query(900px) {
+            border-bottom: 1px solid #c7c4bb;
+            border-top: 1px solid #e8e3d3;
+            list-style: none;
+
+            &:first-child {
+                border-top: 0;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+            a {
+                background: #dbd5c3;
+            }
+            a:hover {
+                background: #e8e4d7;
+            }
+        }
+    }
+}
+
+.expanded:hover {
+    .menu {
+        display: block;
     }
 }
 
