@@ -4,6 +4,17 @@
 	width: 100%;
 	padding: 30px;
 	background-color: $brand-turquoise;
+
+	p {
+		max-width: 350px;
+		margin: 0 auto;
+		font-family: $font-family-headings;
+		font-size: 200%;
+		line-height: 115%;
+		color: #fff;
+		text-align: center;
+	}
+	
 	@include query (850px) {
 		max-width: 500px;
 		background-color: rgba(0, 177, 182, 0.7);
@@ -15,22 +26,14 @@
 		box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.4);
 		border-radius: 10px;
 	}
+
 	@include query(1000px) {
 		top: 120px;
 	}
+
 	@include query(1400px) {
 		top: 155px;
 	}
-}
-
-.front-ft p {
-	max-width: 350px;
-	margin: 0 auto;
-	font-family: $font-family-headings;
-	font-size: 200%;
-	line-height: 115%;
-	color: #fff;
-	text-align: center;
 }
 
 // Texto introductorio
@@ -41,9 +44,9 @@
 	position: relative;
 	z-index: 3;
 	
-	& p {
-	margin: 0 auto;
-	max-width: 500px;
+	p {
+		margin: 0 auto;
+		max-width: 500px;
 	}
 }
 
@@ -62,7 +65,7 @@
 	margin-bottom: 50px;
 	position: relative;
 
-	& img {
+	img {
 		width: 100%;
 	}
 }
@@ -77,13 +80,13 @@
 	top: 0;
 	right: 10%;
 	
-	& h2 {
+	h2 {
 		margin-bottom: 0;
 		text-align: center;
 		color: #fff;
 	}
 
-	& p {
+	p {
 		margin-top: 10px;
 	}
 
