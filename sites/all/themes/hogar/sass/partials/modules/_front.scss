@@ -1,102 +1,97 @@
 // Texto sobre la imagen principal
-
 .front-ft {
-	width: 100%;
-	padding: 30px;
-	background-color: $brand-turquoise;
+    width: 100%;
+    padding: 30px;
+    background-color: $brand-turquoise;
+    
+    @include query (850px) {
+        max-width: 500px;
+        background-color: rgba(0, 177, 182, .7);
+        position: absolute; 
+        z-index: 3;
+        top: 75px;  
+        transform: translateX(-50%);
+        left: 50%;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .4);
+        border-radius: 10px;
+    }
 
-	p {
-		max-width: 350px;
-		margin: 0 auto;
-		font-family: $font-family-headings;
-		font-size: 200%;
-		line-height: 115%;
-		color: #fff;
-		text-align: center;
-	}
-	
-	@include query (850px) {
-		max-width: 500px;
-		background-color: rgba(0, 177, 182, 0.7);
-		position: absolute;	
-		z-index: 3;
-		top: 75px;	
-		transform: translateX(-50%);
-		left: 50%;
-		box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.4);
-		border-radius: 10px;
-	}
+    @include query(1000px) {
+        top: 120px;
+    }
 
-	@include query(1000px) {
-		top: 120px;
-	}
+    @include query(1400px) {
+        top: 155px;
+    }
 
-	@include query(1400px) {
-		top: 155px;
-	}
+    p {
+        max-width: 350px;
+        margin: 0 auto;
+        font-family: $font-family-headings;
+        font-size: 200%;
+        line-height: 115%;
+        color: #fff;
+        text-align: center;
+    }
 }
 
 // Texto introductorio
-
 .front-description {
-	background-color: #fff;
-	padding: 70px 30px;
-	position: relative;
-	z-index: 3;
-	
-	p {
-		margin: 0 auto;
-		max-width: 500px;
-	}
+    background-color: #fff;
+    padding: 70px 30px;
+    position: relative;
+    z-index: 3;
+    
+    p {
+        margin: 0 auto;
+        max-width: 500px;
+    }
 }
 
 .front-description:before {
-	margin: 0 auto 24px;
+    margin: 0 auto 24px;
 }
 
 .front-button {
-	margin-top: 36px;
-	text-align: center;
+    margin-top: 36px;
+    text-align: center;
 }
 
 // Sección presentando casos de éxito
-
 .ft-section {
-	margin-bottom: 50px;
-	position: relative;
+    margin-bottom: 50px;
+    position: relative;
 
-	img {
-		width: 100%;
-	}
+    img {
+        width: 100%;
+    }
 }
 
 .ft-section-text {
-	width: 80%;
-	color: #fff;
-	padding: 5% 36px;
-	background-color: $brand-turquoise;
-	position: absolute;
-	height: 100%;
-	top: 0;
-	right: 10%;
-	
-	h2 {
-		margin-bottom: 0;
-		text-align: center;
-		color: #fff;
-	}
+    width: 80%;
+    color: #fff;
+    padding: 5% 36px;
+    background-color: $brand-turquoise;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 10%;
 
-	p {
-		margin-top: 10px;
-	}
+    @include query(550px) {
+        width: 60%;
+    }
 
-	@include query(550px) {
-		width: 60%;
-	}
-
-	@include query(700px) {
-		width: 40%;
-		max-width: 500px;
-	}
+    @include query(700px) {
+        width: 40%;
+        max-width: 500px;
+    }
+    
+    h2 {
+        margin-bottom: 0;
+        text-align: center;
+        color: #fff;
+    }
+    p {
+        margin-top: 10px;
+    }
 }
-

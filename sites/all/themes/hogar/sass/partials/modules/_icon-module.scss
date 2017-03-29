@@ -1,16 +1,35 @@
 .icon-module {
     margin-bottom: 48px;
+
     @include query(800px) {
-        width: 45%;
+        margin: 0 auto 48px;
+        padding: 0 20px;
+    }
+
+    @include query(940px) {
+        display: inline-block;
+        width: 50%;
         max-width: 400px;
         margin: 0 auto 48px;
         padding: 0 20px;
         float: left;
-        min-height: 500px;
+        vertical-align: top;
     }
+
     @include query(1200px) {
-        width: 30%;
         max-width: 550px;
+    }
+}
+
+.icon-module--half {
+    @include query(1200px) {
+        width: 50%;
+    }
+}
+
+.icon-module--third {
+    @include query(1200px) {
+        width: 33%;
     }
 }
 
@@ -20,10 +39,6 @@
 
 .icon-module:before {
     margin: 0 auto 24px;
-}
-
-.s-icon {
-    min-height: 0;
 }
 
 // Icon classes
