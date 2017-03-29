@@ -1,3 +1,5 @@
+// Texto sobre la imagen principal
+
 .front-ft {
 	width: 100%;
 	padding: 30px;
@@ -31,19 +33,67 @@
 	text-align: center;
 }
 
+// Texto introductorio
+
 .front-description {
 	background-color: #fff;
 	padding: 70px 30px;
 	position: relative;
 	z-index: 3;
-	margin-bottom: 50px;
+	
+	& p {
+	margin: 0 auto;
+	max-width: 500px;
+	}
 }
 
 .front-description:before {
 	margin: 0 auto 24px;
 }
 
-.front-description p {
-	margin: 0 auto;
-	max-width: 500px;
+.front-button {
+	margin-top: 36px;
+	text-align: center;
 }
+
+// Sección presentando casos de éxito
+
+.ft-section {
+	margin-bottom: 50px;
+	position: relative;
+
+	& img {
+		width: 100%;
+	}
+}
+
+.ft-section-text {
+	width: 80%;
+	color: #fff;
+	padding: 5% 36px;
+	background-color: $brand-turquoise;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 10%;
+	
+	& h2 {
+		margin-bottom: 0;
+		text-align: center;
+		color: #fff;
+	}
+
+	& p {
+		margin-top: 10px;
+	}
+
+	@include query(550px) {
+		width: 60%;
+	}
+
+	@include query(700px) {
+		width: 40%;
+		max-width: 500px;
+	}
+}
+
