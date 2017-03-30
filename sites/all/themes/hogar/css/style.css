@@ -1461,7 +1461,7 @@ input[type=file] {
     float: left;
     margin-right: 130px;
     min-width: 300px;
-    max-width: 400px; } }
+    max-width: 350px; } }
 
 .right-column {
   max-width: 640px; }
