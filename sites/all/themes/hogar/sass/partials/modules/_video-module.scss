@@ -33,6 +33,11 @@
     background-color: $brand-turquoise;
     color: #fff; 
 
+    h2, p {
+        margin: 0 0 16px;
+        color: inherit;
+    }
+
     @include query(1000px) {
         width: 90%;
         position: absolute;
@@ -41,9 +46,4 @@
         top: 10%;
         border-radius: 0 10px 10px 0;
     }
-}
-
-.video-quote h2 {
-    margin-top: 0;
-    color: inherit;
 }
