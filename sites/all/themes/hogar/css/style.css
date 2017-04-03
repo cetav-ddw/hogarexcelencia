@@ -950,6 +950,9 @@ input[type=file] {
   padding: 30px;
   background-color: #00B1B6;
   color: #fff; }
+  .video-quote h2, .video-quote p {
+    margin: 0 0 16px;
+    color: inherit; }
   @media only screen and (min-width: 1000px) {
     .video-quote {
       width: 90%;
@@ -958,10 +961,6 @@ input[type=file] {
       left: 100%;
       top: 10%;
       border-radius: 0 10px 10px 0; } }
-
-.video-quote h2 {
-  margin-top: 0;
-  color: inherit; }
 
 .ft-quote {
   color: #00B1B6;
@@ -1436,6 +1435,9 @@ input[type=file] {
   @media only screen and (min-width: 700px) {
     .logged-in .header {
       padding-top: 1em; } }
+
+.main-content {
+  position: relative; }
 
 .main {
   border-top: 10px solid rgba(249, 234, 130, 0.4);
