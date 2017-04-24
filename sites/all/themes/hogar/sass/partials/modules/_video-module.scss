@@ -1,13 +1,12 @@
 .video-module-wrapper {
     position: relative;
     width: 100%;
-    max-width: 500px;
     margin-bottom: 60px;
+    max-width: 900px;
 
-    @include query(1000px) {
-        width: 55%;
-        max-width: 700px;
+    @include query(1400px) {
         margin-right: 45%;
+        max-width: 600px;
     }
 }
 
@@ -28,22 +27,38 @@
 
 .video-quote {
     width: 100%;
-    max-width: 500px;
-    padding: 30px;
-    background-color: $brand-turquoise;
+    max-width: 900px;
     color: #fff; 
+    background-color: $brand-turquoise;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
 
     h2, p {
         margin: 0 0 16px;
         color: inherit;
     }
 
-    @include query(1000px) {
-        width: 90%;
+    @include query(1400px) {
+        max-width: 600px;
         position: absolute;
-        height: 80%;
+        transform: translateY(-50%);
         left: 100%;
-        top: 10%;
+        top: 45%;   
+        background-color: transparent;
+        padding: 0;
+
+        h2 {
+            color: $brand-turquoise;
+            margin: 0 0 0 20px;
+        }
+    }
+}
+
+@include query(1400px) {
+
+    .quote-text {
+        background-color: $brand-turquoise;
         border-radius: 0 10px 10px 0;
+        padding: 30px 20px;
     }
 }
