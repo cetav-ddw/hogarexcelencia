@@ -69,10 +69,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
-    div {
-        width: 100%;
-    }
-
     @include query(1200px) {
         width: 100%;
     }

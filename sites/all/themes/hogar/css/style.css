@@ -218,6 +218,9 @@ html.js fieldset.collapsed .fieldset-legend {
 .progress .filled {
   background: #0072b9 url(../images/system-images/progress.gif); }
 
+.panel-pane {
+  width: 100%; }
+
 .messages-wrapper {
   width: 80%;
   margin: 0 auto;
@@ -923,13 +926,12 @@ input[type=file] {
 .video-module-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  margin-bottom: 60px; }
-  @media only screen and (min-width: 1000px) {
+  margin-bottom: 60px;
+  max-width: 900px; }
+  @media only screen and (min-width: 1400px) {
     .video-module-wrapper {
-      width: 55%;
-      max-width: 700px;
-      margin-right: 45%; } }
+      margin-right: 45%;
+      max-width: 600px; } }
 
 .video-module {
   position: relative;
@@ -946,21 +948,72 @@ input[type=file] {
 
 .video-quote {
   width: 100%;
-  max-width: 500px;
-  padding: 30px;
+  max-width: 900px;
+  color: #fff;
   background-color: #00B1B6;
-  color: #fff; }
+  border-radius: 0 0 10px 10px;
+  padding: 20px; }
   .video-quote h2, .video-quote p {
     margin: 0 0 16px;
     color: inherit; }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1400px) {
     .video-quote {
-      width: 90%;
+      max-width: 600px;
       position: absolute;
-      height: 80%;
+      transform: translateY(-50%);
       left: 100%;
-      top: 10%;
-      border-radius: 0 10px 10px 0; } }
+      top: 45%;
+      background-color: transparent;
+      padding: 0; }
+      .video-quote h2 {
+        color: #00B1B6;
+        margin: 0 0 0 20px; } }
+
+@media only screen and (min-width: 1400px) {
+  .quote-text {
+    background-color: #00B1B6;
+    border-radius: 0 10px 10px 0;
+    padding: 30px 20px; } }
+.thumbnail-list {
+  margin-top: 36px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end; }
+
+.thumbnail-item {
+  vertical-align: bottom;
+  float: left;
+  list-style: none;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto 90px;
+  text-align: center; }
+  .thumbnail-item img {
+    margin-bottom: 20px; }
+  @media only screen and (min-width: 600px) {
+    .thumbnail-item {
+      width: 50%; } }
+  @media only screen and (min-width: 900px) {
+    .thumbnail-item {
+      width: 33%; } }
+  @media only screen and (min-width: 1200px) {
+    .thumbnail-item {
+      width: 25%; } }
 
 .ft-quote {
   color: #00B1B6;
@@ -1482,8 +1535,17 @@ input[type=file] {
 
 .wide-column {
   padding: 36px 0;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .wide-column div {
+    width: 100%; }
   @media only screen and (min-width: 1200px) {
     .wide-column {
       width: 100%; } }
